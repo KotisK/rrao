@@ -1,0 +1,2905 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://i-lab.aegean.gr/ontologies/rrao#"
+     xml:base="http://i-lab.aegean.gr/ontologies/rrao"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#crimeCategory -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#crimeCategory">
+        <rdfs:label>Crime category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_01 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_01">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#crimeCategory"/>
+        <rdfs:label xml:lang="en">Acts leading to death or intending to cause death</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0101 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0101">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_01"/>
+        <rdfs:label xml:lang="en">Intentional homicide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0102 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0102">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_01"/>
+        <rdfs:label xml:lang="en">Attempted intentional homicide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0103 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0103">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_01"/>
+        <rdfs:label xml:lang="en">Non-intentional homicide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_01031 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_01031">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0103"/>
+        <rdfs:label xml:lang="en">Non-negligent manslaughter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_01032 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_01032">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0103"/>
+        <rdfs:label xml:lang="en">Negligent manslaughter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_010321 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_010321">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_01032"/>
+        <rdfs:label xml:lang="en">Vehicular homicide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_010322 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_010322">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_01032"/>
+        <rdfs:label xml:lang="en">Non-vehicular homicide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0104 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0104">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_01"/>
+        <rdfs:label xml:lang="en">Assisting or instigating suicide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_01041 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_01041">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0104"/>
+        <rdfs:label xml:lang="en">Assisting suicide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_01049 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_01049">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0104"/>
+        <rdfs:label xml:lang="en">Other acts of assisting or instigating suicide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0105 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0105">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_01"/>
+        <rdfs:label xml:lang="en">Euthanasia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0106 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0106">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_01"/>
+        <rdfs:label xml:lang="en">Illegal feticide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0107 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0107">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_01"/>
+        <rdfs:label xml:lang="en">Unlawful killing associated with armed conflict</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0109 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0109">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_01"/>
+        <rdfs:label xml:lang="en">Other acts leading to death or intending to cause death</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#crimeCategory"/>
+        <rdfs:label xml:lang="en">Acts causing harm or intending to cause harm to the person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0201 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0201">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02"/>
+        <rdfs:label xml:lang="en">Assaults and threats</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02011 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02011">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0201"/>
+        <rdfs:label xml:lang="en">Assault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020111 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020111">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02011"/>
+        <rdfs:label xml:lang="en">Serious assault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020112 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020112">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02011"/>
+        <rdfs:label xml:lang="en">Minor assault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02012 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02012">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0201"/>
+        <rdfs:label xml:lang="en">Threat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020121 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020121">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02012"/>
+        <rdfs:label xml:lang="en">Serious threat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020122 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020122">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02012"/>
+        <rdfs:label xml:lang="en">Minor threat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02019 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02019">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0201"/>
+        <rdfs:label xml:lang="en">Other assaults or threats</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0202 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0202">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02"/>
+        <rdfs:label xml:lang="en">Acts against liberty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02021 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02021">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0202"/>
+        <rdfs:label xml:lang="en">Abduction of a minor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020211 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020211">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02021"/>
+        <rdfs:label xml:lang="en">Parental abduction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020212 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020212">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02021"/>
+        <rdfs:label xml:lang="en">Abduction by another family member</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020213 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020213">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02021"/>
+        <rdfs:label xml:lang="en">Abduction by a legal guardian</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020219 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020219">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02021"/>
+        <rdfs:label xml:lang="en">Other abduction of a minor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02022 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02022">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0202"/>
+        <rdfs:label xml:lang="en">Deprivation of liberty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020221 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020221">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02022"/>
+        <rdfs:label xml:lang="en">Kidnapping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020222 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020222">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02022"/>
+        <rdfs:label xml:lang="en">Illegal restraint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020223 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020223">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02022"/>
+        <rdfs:label xml:lang="en">Hijacking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020229 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020229">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02022"/>
+        <rdfs:label xml:lang="en">Other deprivation of liberty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02029 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02029">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0202"/>
+        <rdfs:label xml:lang="en">Other acts against liberty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020291 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020291">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02029"/>
+        <rdfs:label xml:lang="en">Illegal adoption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020292 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020292">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02029"/>
+        <rdfs:label xml:lang="en">Forced marriage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020299 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020299">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02029"/>
+        <rdfs:label xml:lang="en">Other acts against liberty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0203 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0203">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02"/>
+        <rdfs:label xml:lang="en">Slavery and exploitation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02031 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02031">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0203"/>
+        <rdfs:label xml:lang="en">Slavery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02032 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02032">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0203"/>
+        <rdfs:label xml:lang="en">Forced labour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020321 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020321">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02032"/>
+        <rdfs:label xml:lang="en">Forced labour for domestic services</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020322 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020322">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02032"/>
+        <rdfs:label xml:lang="en">Forced labour for industrial services</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020323 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020323">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02032"/>
+        <rdfs:label xml:lang="en">Forced labour for the State or armed forces</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020329 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020329">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02032"/>
+        <rdfs:label xml:lang="en">Other forced labour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02039 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02039">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0203"/>
+        <rdfs:label xml:lang="en">Other acts of slavery and exploitation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0204 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0204">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02"/>
+        <rdfs:label xml:lang="en">Trafficking in persons (TIP)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02041 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02041">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0204"/>
+        <rdfs:label xml:lang="en">TIP for sexual exploitation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02042 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02042">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0204"/>
+        <rdfs:label xml:lang="en">TIP for forced labour or services</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02043 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02043">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0204"/>
+        <rdfs:label xml:lang="en">TIP for organ removal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02049 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02049">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0204"/>
+        <rdfs:label xml:lang="en">TIP for other purposes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0205 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0205">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02"/>
+        <rdfs:label xml:lang="en">Coercion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02051 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02051">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0205"/>
+        <rdfs:label xml:lang="en">Extortion or blackmail</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02059 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02059">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0205"/>
+        <rdfs:label xml:lang="en">Other acts of coercion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0206 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0206">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02"/>
+        <rdfs:label xml:lang="en">Negligence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02061 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02061">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0206"/>
+        <rdfs:label xml:lang="en">Negligence in situations of persons under care</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020611 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020611">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02061"/>
+        <rdfs:label xml:lang="en">Negligence in situations of children under care</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020612 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020612">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02061"/>
+        <rdfs:label xml:lang="en">Negligence in situations of other dependent persons under care</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020619 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020619">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02061"/>
+        <rdfs:label xml:lang="en">Other negligence in situations of persons under care</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02062 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02062">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0206"/>
+        <rdfs:label xml:lang="en">Professional negligence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02063 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02063">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0206"/>
+        <rdfs:label xml:lang="en">Negligence related to driving a vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02069 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02069">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0206"/>
+        <rdfs:label xml:lang="en">Other acts of negligence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0207 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0207">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02"/>
+        <rdfs:label xml:lang="en">Dangerous acts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02071 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02071">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0207"/>
+        <rdfs:label xml:lang="en">Acts that endanger health</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02072 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02072">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0207"/>
+        <rdfs:label xml:lang="en">Operating a vehicle under the influence of psychoactive substances</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020721 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020721">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02072"/>
+        <rdfs:label xml:lang="en">Operating a vehicle under the influence of alcohol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020722 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020722">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02072"/>
+        <rdfs:label xml:lang="en">Operating a vehicle under the influence of illicit drugs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020729 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020729">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02072"/>
+        <rdfs:label xml:lang="en">Operating a vehicle under the influence of other psychoactive substances</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02079 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02079">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0207"/>
+        <rdfs:label xml:lang="en">Other dangerous acts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0208 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0208">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02"/>
+        <rdfs:label xml:lang="en">Acts intended to induce fear or emotional distress</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02081 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02081">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0208"/>
+        <rdfs:label xml:lang="en">Harassment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020811 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020811">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02081"/>
+        <rdfs:label xml:lang="en">Harassment in the workplace</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020819 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_020819">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02081"/>
+        <rdfs:label xml:lang="en">Other harassment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02082 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02082">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0208"/>
+        <rdfs:label xml:lang="en">Stalking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02089 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02089">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0208"/>
+        <rdfs:label xml:lang="en">Other acts intended to induce fear or emotional distress</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0209 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0209">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02"/>
+        <rdfs:label xml:lang="en">Defamation or insult</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02091 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02091">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0209"/>
+        <rdfs:label xml:lang="en">Defamation or insult due to the victim&apos;s characteristics or ascribed attributes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02092 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02092">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0209"/>
+        <rdfs:label xml:lang="en">Defamation or insult due to the victim&apos;s ascribed beliefs or values</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02099 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02099">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0209"/>
+        <rdfs:label xml:lang="en">Other defamation or insult</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0210 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0210">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02"/>
+        <rdfs:label xml:lang="en">Discrimination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02101 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02101">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0210"/>
+        <rdfs:label xml:lang="en">Personal discrimination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02102 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02102">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0210"/>
+        <rdfs:label xml:lang="en">Group discrimination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02109 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02109">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0210"/>
+        <rdfs:label xml:lang="en">Other discrimination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0211 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0211">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02"/>
+        <rdfs:label xml:lang="en">Acts that trespass against the person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02111 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02111">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0211"/>
+        <rdfs:label xml:lang="en">Invasion of privacy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02119 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02119">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0211"/>
+        <rdfs:label xml:lang="en">Other acts that trespass against the person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0219 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0219">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_02"/>
+        <rdfs:label xml:lang="en">Other acts causing harm or intending to cause harm to the person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#crimeCategory"/>
+        <rdfs:label xml:lang="en">Injurious acts of a sexual nature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0301 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0301">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03"/>
+        <rdfs:label xml:lang="en">Sexual violence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03011 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03011">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0301"/>
+        <rdfs:label xml:lang="en">Rape</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_030111 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_030111">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03011"/>
+        <rdfs:label xml:lang="en">Rape with force</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_030112 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_030112">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03011"/>
+        <rdfs:label xml:lang="en">Rape without force</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_030113 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_030113">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03011"/>
+        <rdfs:label xml:lang="en">Statutory rape</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_030119 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_030119">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03011"/>
+        <rdfs:label xml:lang="en">Other rape</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03012 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03012">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0301"/>
+        <rdfs:label xml:lang="en">Sexual assault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_030121 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_030121">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03012"/>
+        <rdfs:label xml:lang="en">Physical sexual assault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_030122 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_030122">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03012"/>
+        <rdfs:label xml:lang="en">Non-physical sexual assault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_030129 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_030129">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03012"/>
+        <rdfs:label xml:lang="en">Other sexual assault not elsewhere classified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03019 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03019">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0301"/>
+        <rdfs:label xml:lang="en">Other acts of sexual violence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0302 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0302">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03"/>
+        <rdfs:label xml:lang="en">Sexual exploitation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03021 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03021">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0302"/>
+        <rdfs:label xml:lang="en">Sexual exploitation of adults</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03022 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03022">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0302"/>
+        <rdfs:label xml:lang="en">Sexual exploitation of children</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_030221 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_030221">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03022"/>
+        <rdfs:label xml:lang="en">Child pornography</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_030222 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_030222">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03022"/>
+        <rdfs:label xml:lang="en">Child prostitution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_030223 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_030223">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03022"/>
+        <rdfs:label xml:lang="en">Sexual grooming of children</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_030229 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_030229">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03022"/>
+        <rdfs:label xml:lang="en">Other sexual exploitation of children</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03029 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03029">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0302"/>
+        <rdfs:label xml:lang="en">Other acts of sexual exploitation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0309 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0309">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_03"/>
+        <rdfs:label xml:lang="en">Other injurious acts of a sexual nature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_04 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_04">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#crimeCategory"/>
+        <rdfs:label xml:lang="en">Acts against property involving violence or threat against a person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0401 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0401">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_04"/>
+        <rdfs:label xml:lang="en">Robbery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_04011 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_04011">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0401"/>
+        <rdfs:label xml:lang="en">Robbery from the person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_040111 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_040111">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_04011"/>
+        <rdfs:label xml:lang="en">Robbery from the person in a public location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_040112 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_040112">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_04011"/>
+        <rdfs:label xml:lang="en">Robbery from the person in a private location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_040119 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_040119">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_04011"/>
+        <rdfs:label xml:lang="en">Other robbery from the person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_04012 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_04012">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0401"/>
+        <rdfs:label xml:lang="en">Robbery of valuables or goods in transit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_040121 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_040121">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_04012"/>
+        <rdfs:label xml:lang="en">Robbery of a car or vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_040129 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_040129">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_04012"/>
+        <rdfs:label xml:lang="en">Other robbery of valuables or goods in transit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_04013 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_04013">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0401"/>
+        <rdfs:label xml:lang="en">Robbery of an establishment or institution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_040131 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_040131">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_04013"/>
+        <rdfs:label xml:lang="en">Robbery of a financial institution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_040132 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_040132">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_04013"/>
+        <rdfs:label xml:lang="en">Robbery of a non-financial institution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_04014 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_04014">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0401"/>
+        <rdfs:label xml:lang="en">Robbery of livestock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_04019 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_04019">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0401"/>
+        <rdfs:label xml:lang="en">Other acts of robbery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0409 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0409">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_04"/>
+        <rdfs:label xml:lang="en">Other acts against property involving violence or threat against a person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#crimeCategory"/>
+        <rdfs:label xml:lang="en">Acts against property only</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0501 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0501">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05"/>
+        <rdfs:label xml:lang="en">Burglary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05011 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05011">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0501"/>
+        <rdfs:label xml:lang="en">Burglary of business premises</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05012 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05012">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0501"/>
+        <rdfs:label xml:lang="en">Burglary of private residential premises</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_050121 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_050121">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05012"/>
+        <rdfs:label xml:lang="en">Burglary of permanent private residences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_050122 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_050122">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05012"/>
+        <rdfs:label xml:lang="en">Burglary of non-permanent private residences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05013 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05013">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0501"/>
+        <rdfs:label xml:lang="en">Burglary of public premises</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05019 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05019">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0501"/>
+        <rdfs:label xml:lang="en">Other acts of burglary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0502 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0502">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05"/>
+        <rdfs:label xml:lang="en">Theft</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05021 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05021">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0502"/>
+        <rdfs:label xml:lang="en">Theft of a motorized vehicle or parts thereof</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_050211 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_050211">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05021"/>
+        <rdfs:label xml:lang="en">Theft of a motorized land vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_050212 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_050212">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05021"/>
+        <rdfs:label xml:lang="en">Illegal use of a motorized land vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_050213 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_050213">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05021"/>
+        <rdfs:label xml:lang="en">Theft of parts of a motorized land vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_050219 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_050219">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05021"/>
+        <rdfs:label xml:lang="en">Other theft of a motorized vehicle or parts thereof</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05022 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05022">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0502"/>
+        <rdfs:label xml:lang="en">Theft of personal property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_050221 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_050221">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05022"/>
+        <rdfs:label xml:lang="en">Theft of personal property from a person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_050222 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_050222">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05022"/>
+        <rdfs:label xml:lang="en">Theft of personal property from a vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_050229 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_050229">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05022"/>
+        <rdfs:label xml:lang="en">Other theft of personal property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05023 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05023">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0502"/>
+        <rdfs:label xml:lang="en">Theft of business property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_050231 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_050231">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05023"/>
+        <rdfs:label xml:lang="en">Theft from a shop</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_050239 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_050239">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05023"/>
+        <rdfs:label xml:lang="en">Other theft of business property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05024 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05024">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0502"/>
+        <rdfs:label xml:lang="en">Theft of public property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05025 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05025">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0502"/>
+        <rdfs:label xml:lang="en">Theft of livestock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05026 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05026">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0502"/>
+        <rdfs:label xml:lang="en">Theft of services</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05029 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05029">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0502"/>
+        <rdfs:label xml:lang="en">Other acts of theft</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0503 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0503">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05"/>
+        <rdfs:label xml:lang="en">Intellectual property offences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0504 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0504">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05"/>
+        <rdfs:label xml:lang="en">Property damage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05041 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05041">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0504"/>
+        <rdfs:label xml:lang="en">Damage of public property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05042 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05042">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0504"/>
+        <rdfs:label xml:lang="en">Damage of personal property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05043 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05043">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0504"/>
+        <rdfs:label xml:lang="en">Damage of business property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05049 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05049">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0504"/>
+        <rdfs:label xml:lang="en">Other damage of property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0509 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0509">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_05"/>
+        <rdfs:label xml:lang="en">Other acts against property only</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#crimeCategory"/>
+        <rdfs:label xml:lang="en">Acts involving controlled drugs or other psychoactive substances</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0601 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0601">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06"/>
+        <rdfs:label xml:lang="en">Unlawful acts involving controlled drugs or precursors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06011 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06011">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0601"/>
+        <rdfs:label xml:lang="en">Unlawful possession, purchase, use, cultivation or production of controlled drugs for personal consumption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060111 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060111">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06011"/>
+        <rdfs:label xml:lang="en">Unlawful possession, purchase or use of controlled drugs for personal consumption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060112 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060112">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06011"/>
+        <rdfs:label xml:lang="en">Unlawful cultivation or production of controlled drugs for personal consumption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06012 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06012">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0601"/>
+        <rdfs:label xml:lang="en">Unlawful trafficking, cultivation or production of controlled drugs or precursors not for personal consumption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060121 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060121">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06012"/>
+        <rdfs:label xml:lang="en">Unlawful trafficking of controlled drugs not for personal consumption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060122 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060122">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06012"/>
+        <rdfs:label xml:lang="en">Unlawful manufacture of controlled drugs not for personal consumption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060123 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060123">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06012"/>
+        <rdfs:label xml:lang="en">Unlawful cultivation of controlled drugs not for personal consumption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060124 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060124">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06012"/>
+        <rdfs:label xml:lang="en">Unlawful diversion of precursors not for personal consumption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060129 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060129">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06012"/>
+        <rdfs:label xml:lang="en">Other unlawful trafficking, cultivation or production of controlled drugs or precursors not for personal consumption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06019 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06019">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0601"/>
+        <rdfs:label xml:lang="en">Other unlawful acts involving controlled drugs or precursors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0602 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0602">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06"/>
+        <rdfs:label xml:lang="en">Unlawful acts involving alcohol, tobacco or other controlled substances</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06021 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06021">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0602"/>
+        <rdfs:label xml:lang="en">Unlawful production, handling, possession or use of alcohol products</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060211 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060211">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06021"/>
+        <rdfs:label xml:lang="en">Unlawful possession or use of alcohol products</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060212 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060212">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06021"/>
+        <rdfs:label xml:lang="en">Unlawful production, trafficking or distribution of alcohol products</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060219 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060219">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06021"/>
+        <rdfs:label xml:lang="en">Other unlawful production, handling, possession or use of alcohol products</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06022 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06022">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0602"/>
+        <rdfs:label xml:lang="en">Unlawful production, handling, possession or use of tobacco products</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060221 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060221">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06022"/>
+        <rdfs:label xml:lang="en">Unlawful possession or use of tobacco products</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060222 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060222">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06022"/>
+        <rdfs:label xml:lang="en">Unlawful production, trafficking or distribution of tobacco products</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060229 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_060229">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06022"/>
+        <rdfs:label xml:lang="en">Other unlawful production, handling, possession or use of tobacco products</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06029 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06029">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0602"/>
+        <rdfs:label xml:lang="en">Other unlawful acts involving alcohol, tobacco or other controlled substances</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0609 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0609">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_06"/>
+        <rdfs:label xml:lang="en">Other acts involving controlled drugs or other psychoactive substances</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#crimeCategory"/>
+        <rdfs:label xml:lang="en">Acts involving fraud, deception or corruption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0701 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0701">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07"/>
+        <rdfs:label xml:lang="en">Fraud</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07011 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07011">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0701"/>
+        <rdfs:label xml:lang="en">Financial fraud</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_070111 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_070111">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07011"/>
+        <rdfs:label xml:lang="en">Financial fraud against the State</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_070112 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_070112">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07011"/>
+        <rdfs:label xml:lang="en">Financial fraud against natural or legal persons</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07019 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07019">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0701"/>
+        <rdfs:label xml:lang="en">Other acts of fraud</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0702 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0702">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07"/>
+        <rdfs:label xml:lang="en">Forgery/counterfeiting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07021 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07021">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0702"/>
+        <rdfs:label xml:lang="en">Counterfeiting means of payment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_070211 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_070211">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07021"/>
+        <rdfs:label xml:lang="en">Counterfeiting means of cash payment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_070212 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_070212">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07021"/>
+        <rdfs:label xml:lang="en">Counterfeiting means of non-cash payment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07022 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07022">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0702"/>
+        <rdfs:label xml:lang="en">Counterfeit product offences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07023 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07023">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0702"/>
+        <rdfs:label xml:lang="en">Acts of forgery/counterfeiting documents</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07029 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07029">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0702"/>
+        <rdfs:label xml:lang="en">Other acts of forgery/counterfeiting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0703 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0703">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07"/>
+        <rdfs:label xml:lang="en">Corruption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07031 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07031">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0703"/>
+        <rdfs:label xml:lang="en">Bribery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_070311 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_070311">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07031"/>
+        <rdfs:label xml:lang="en">Active bribery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_070312 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_070312">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07031"/>
+        <rdfs:label xml:lang="en">Passive bribery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07032 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07032">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0703"/>
+        <rdfs:label xml:lang="en">Embezzlement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07033 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07033">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0703"/>
+        <rdfs:label xml:lang="en">Abuse of functions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07034 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07034">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0703"/>
+        <rdfs:label xml:lang="en">Trading in influence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07035 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07035">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0703"/>
+        <rdfs:label xml:lang="en">Illicit enrichment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07039 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07039">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0703"/>
+        <rdfs:label xml:lang="en">Other acts of corruption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0704 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0704">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07"/>
+        <rdfs:label xml:lang="en">Acts involving the proceeds of crime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07041 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07041">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0704"/>
+        <rdfs:label xml:lang="en">Money laundering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07042 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07042">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0704"/>
+        <rdfs:label xml:lang="en">Illicit trafficking in cultural property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07049 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_07049">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0704"/>
+        <rdfs:label xml:lang="en">Other acts involving the proceeds of crime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#crimeCategory"/>
+        <rdfs:label xml:lang="en">Acts against public order, authority and provisions of the State</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0801 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0801">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08"/>
+        <rdfs:label xml:lang="en">Acts against public order behavioural standards</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08011 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08011">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0801"/>
+        <rdfs:label xml:lang="en">Violent public disorder offences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08012 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08012">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0801"/>
+        <rdfs:label xml:lang="en">Acts related to social and religious public order norms and standards</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08019 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08019">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0801"/>
+        <rdfs:label xml:lang="en">Other acts against public order behavioural standards</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0802 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0802">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08"/>
+        <rdfs:label xml:lang="en">Acts against public order sexual standards</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08021 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08021">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0802"/>
+        <rdfs:label xml:lang="en">Prostitution offences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08022 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08022">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0802"/>
+        <rdfs:label xml:lang="en">Pornography offences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08029 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08029">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0802"/>
+        <rdfs:label xml:lang="en">Other acts against public order sexual standards</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0803 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0803">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08"/>
+        <rdfs:label xml:lang="en">Acts related to freedom of expression or control of expression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08031 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08031">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0803"/>
+        <rdfs:label xml:lang="en">Acts against freedom of expression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08032 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08032">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0803"/>
+        <rdfs:label xml:lang="en">Acts related to expressions of controlled social beliefs and norms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_080321 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_080321">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08032"/>
+        <rdfs:label xml:lang="en">Violations of norms on religious beliefs/views</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_080322 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_080322">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08032"/>
+        <rdfs:label xml:lang="en">Violations of norms on intolerance and incitement to hatred</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_080329 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_080329">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08032"/>
+        <rdfs:label xml:lang="en">Other acts related to expressions of controlled social beliefs and norms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08039 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08039">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0803"/>
+        <rdfs:label xml:lang="en">Other acts related to freedom of expression or control of expression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0804 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0804">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08"/>
+        <rdfs:label xml:lang="en">Acts contrary to public revenue or regulatory provisions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08041 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08041">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0804"/>
+        <rdfs:label xml:lang="en">Acts against public revenue provisions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08042 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08042">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0804"/>
+        <rdfs:label xml:lang="en">Acts against commercial or financial regulations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08043 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08043">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0804"/>
+        <rdfs:label xml:lang="en">Acts against regulations on betting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08044 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08044">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0804"/>
+        <rdfs:label xml:lang="en">Smuggling of goods</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08045 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08045">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0804"/>
+        <rdfs:label xml:lang="en">Market manipulations or insider trading</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08049 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08049">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0804"/>
+        <rdfs:label xml:lang="en">Other acts against public administration or regulatory provisions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0805 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0805">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08"/>
+        <rdfs:label xml:lang="en">Acts related to migration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08051 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08051">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0805"/>
+        <rdfs:label xml:lang="en">Smuggling of migrants offences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08059 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08059">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0805"/>
+        <rdfs:label xml:lang="en">Other unlawful acts related to migration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0806 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0806">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08"/>
+        <rdfs:label xml:lang="en">Acts against the justice system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08061 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08061">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0806"/>
+        <rdfs:label xml:lang="en">Obstruction of justice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08062 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08062">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0806"/>
+        <rdfs:label xml:lang="en">Breach of justice order</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08063 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08063">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0806"/>
+        <rdfs:label xml:lang="en">Criminal intent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08064 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08064">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0806"/>
+        <rdfs:label xml:lang="en">Conspiracy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08069 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08069">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0806"/>
+        <rdfs:label xml:lang="en">Other acts against the justice system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0807 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0807">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08"/>
+        <rdfs:label xml:lang="en">Acts related to democratic elections</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08071 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08071">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0807"/>
+        <rdfs:label xml:lang="en">Acts intended to unduly influence voters at elections</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08079 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08079">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0807"/>
+        <rdfs:label xml:lang="en">Other acts related to democratic elections</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0808 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0808">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08"/>
+        <rdfs:label xml:lang="en">Acts contrary to labour law</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08081 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08081">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0808"/>
+        <rdfs:label xml:lang="en">Collective labour law violations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08082 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08082">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0808"/>
+        <rdfs:label xml:lang="en">Individual labour law violations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0809 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0809">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_08"/>
+        <rdfs:label xml:lang="en">Other acts against public order, authority and provisions of the State</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#crimeCategory"/>
+        <rdfs:label xml:lang="en">Acts against public safety and state security</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0901 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0901">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09"/>
+        <rdfs:label xml:lang="en">Acts involving weapons, explosives and other destructive materials</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09011 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09011">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0901"/>
+        <rdfs:label xml:lang="en">Possession or use of weapons and explosives</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_090111 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_090111">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09011"/>
+        <rdfs:label xml:lang="en">Unlawful possession or use of firearms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_090112 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_090112">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09011"/>
+        <rdfs:label xml:lang="en">Unlawful possession or use of other weapons or explosives</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_090113 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_090113">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09011"/>
+        <rdfs:label xml:lang="en">Unlawful possession or use of chemical, biological or radioactive materials</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_090119 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_090119">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09011"/>
+        <rdfs:label xml:lang="en">Other acts related to possession or use of weapons and explosives</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09012 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09012">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0901"/>
+        <rdfs:label xml:lang="en">Trafficking of weapons and explosives</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_090121 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_090121">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09012"/>
+        <rdfs:label xml:lang="en">Trafficking of firearms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_090122 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_090122">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09012"/>
+        <rdfs:label xml:lang="en">Trafficking of other weapons or explosives</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_090123 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_090123">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09012"/>
+        <rdfs:label xml:lang="en">Trafficking of chemical, biological or radioactive materials</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_090129 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_090129">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09012"/>
+        <rdfs:label xml:lang="en">Other acts related to trafficking of weapons and explosives</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09019 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09019">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0901"/>
+        <rdfs:label xml:lang="en">Other acts relating to weapons and explosives</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0902 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0902">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09"/>
+        <rdfs:label xml:lang="en">Acts against health and safety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09021 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09021">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0902"/>
+        <rdfs:label xml:lang="en">Acts against health and safety at work</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09029 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09029">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0902"/>
+        <rdfs:label xml:lang="en">Other acts against health and safety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0903 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0903">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09"/>
+        <rdfs:label xml:lang="en">Acts against computer systems</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09031 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09031">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0903"/>
+        <rdfs:label xml:lang="en">Unlawful access to a computer system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09032 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09032">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0903"/>
+        <rdfs:label xml:lang="en">Unlawful interference with a computer system or computer data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_090321 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_090321">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09032"/>
+        <rdfs:label xml:lang="en">Unlawful interference with a computer system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_090322 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_090322">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09032"/>
+        <rdfs:label xml:lang="en">Unlawful interference with computer data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09033 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09033">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0903"/>
+        <rdfs:label xml:lang="en">Unlawful interception or access of computer data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09039 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09039">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0903"/>
+        <rdfs:label xml:lang="en">Other acts against computer systems</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0904 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0904">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09"/>
+        <rdfs:label xml:lang="en">Acts against state security</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0905 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0905">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09"/>
+        <rdfs:label xml:lang="en">Acts related to an organized criminal group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09051 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09051">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0905"/>
+        <rdfs:label xml:lang="en">Participation in an organized criminal group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09059 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09059">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0905"/>
+        <rdfs:label xml:lang="en">Other acts related to an organized criminal group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0906 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0906">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09"/>
+        <rdfs:label xml:lang="en">Terrorism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09061 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09061">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0906"/>
+        <rdfs:label xml:lang="en">Participation in a terrorist group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09062 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09062">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0906"/>
+        <rdfs:label xml:lang="en">Financing of terrorism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09069 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09069">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0906"/>
+        <rdfs:label xml:lang="en">Other acts related to the activities of a terrorist group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0907 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0907">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09"/>
+        <rdfs:label xml:lang="en">Non-injurious traffic violations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0909 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0909">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_09"/>
+        <rdfs:label xml:lang="en">Other acts against public safety and state security</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#crimeCategory"/>
+        <rdfs:label xml:lang="en">Acts against the natural environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1001 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1001">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10"/>
+        <rdfs:label xml:lang="en">Acts that cause environmental pollution or degradation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10011 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10011">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1001"/>
+        <rdfs:label xml:lang="en">Acts that cause the pollution or degradation of air</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10012 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10012">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1001"/>
+        <rdfs:label xml:lang="en">Acts that cause the pollution or degradation of water</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10013 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10013">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1001"/>
+        <rdfs:label xml:lang="en">Acts that cause the pollution or degradation of soil</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10019 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10019">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1001"/>
+        <rdfs:label xml:lang="en">Other acts that cause environmental pollution or degradation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1002 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1002">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10"/>
+        <rdfs:label xml:lang="en">Acts involving the movement or dumping of waste</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10021 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10021">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1002"/>
+        <rdfs:label xml:lang="en">Acts involving the movement or dumping of waste within national borders</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10022 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10022">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1002"/>
+        <rdfs:label xml:lang="en">Acts involving the movement or dumping of waste across national borders</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1003 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1003">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10"/>
+        <rdfs:label xml:lang="en">Trade or possession of protected or prohibited species of fauna and flora</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10031 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10031">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1003"/>
+        <rdfs:label xml:lang="en">Trade or possession of protected species of wild fauna and flora</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_100311 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_100311">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10031"/>
+        <rdfs:label xml:lang="en">Trade or possession of protected species within national borders</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_100312 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_100312">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10031"/>
+        <rdfs:label xml:lang="en">Trafficking of protected species across national borders</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10032 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10032">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1003"/>
+        <rdfs:label xml:lang="en">Trade or possession of prohibited or controlled species of animals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10039 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10039">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1003"/>
+        <rdfs:label xml:lang="en">Other trade or possession of protected or prohibited species of fauna and flora</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1004 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1004">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10"/>
+        <rdfs:label xml:lang="en">Acts that result in the depletion or degradation of natural resources</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10041 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10041">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1004"/>
+        <rdfs:label xml:lang="en">Illegal logging</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10042 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10042">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1004"/>
+        <rdfs:label xml:lang="en">Illegal hunting, fishing or gathering of wild fauna and flora</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10043 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10043">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1004"/>
+        <rdfs:label xml:lang="en">Illegal mining</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10049 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10049">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1004"/>
+        <rdfs:label xml:lang="en">Other acts that result in the depletion or degradation of natural resources</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1009 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1009">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10"/>
+        <rdfs:label xml:lang="en">Other acts against the natural environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10091 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10091">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1009"/>
+        <rdfs:label xml:lang="en">Acts against animals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10099 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_10099">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1009"/>
+        <rdfs:label xml:lang="en">Other acts against the natural environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#crimeCategory"/>
+        <rdfs:label xml:lang="en">Other criminal acts not elsewhere classified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1101 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1101">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11"/>
+        <rdfs:label xml:lang="en">Acts under universal jurisdiction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11011 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11011">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1101"/>
+        <rdfs:label xml:lang="en">Torture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11012 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11012">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1101"/>
+        <rdfs:label xml:lang="en">Piracy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11013 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11013">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1101"/>
+        <rdfs:label xml:lang="en">War crimes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_110131 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_110131">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11013"/>
+        <rdfs:label xml:lang="en">Unlawfully killing, causing or intending to cause death or serious injury associated with armed conflict</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_110132 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_110132">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11013"/>
+        <rdfs:label xml:lang="en">Unlawful destruction or damage to property associated with armed conflict</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_110133 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_110133">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11013"/>
+        <rdfs:label xml:lang="en">Sexual violence associated with armed conflict</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_110134 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_110134">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11013"/>
+        <rdfs:label xml:lang="en">Acts against liberty or human dignity associated with armed conflict</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_110135 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_110135">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11013"/>
+        <rdfs:label xml:lang="en">Conscripting or enlisting child soldiers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_110139 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_110139">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11013"/>
+        <rdfs:label xml:lang="en">Other war crimes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11014 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11014">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1101"/>
+        <rdfs:label xml:lang="en">Genocide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11015 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11015">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1101"/>
+        <rdfs:label xml:lang="en">Crimes against humanity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11016 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11016">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1101"/>
+        <rdfs:label xml:lang="en">Crime of aggression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11019 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11019">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1101"/>
+        <rdfs:label xml:lang="en">Other acts under universal jurisdiction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1102 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1102">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11"/>
+        <rdfs:label xml:lang="en">Acts contrary to youth regulations and acts on minors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11021 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11021">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1102"/>
+        <rdfs:label xml:lang="en">Status offences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11029 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11029">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1102"/>
+        <rdfs:label xml:lang="en">Other acts contrary to youth regulations and acts on minors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1109 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_1109">
+        <rdfs:subClassOf rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_11"/>
+        <rdfs:label xml:lang="en">Other criminal acts not elsewhere classified</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
