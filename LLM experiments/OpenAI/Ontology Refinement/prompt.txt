@@ -1,0 +1,1 @@
+The goal of the given ontology is to model all necessary concepts and their relationships for criminal justice. The scope of the ontology is to assess the risk of recidivism of released prisoners. Your ultimate goal is to improve the given ontology and make it as comprehensive as possible, covering all aspects of the domain. 

@@ -1,0 +1,130 @@
+@prefix : <http://example.org/criminal_justice_ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:CriminalJusticeOntology a owl:Ontology ;
+    rdfs:label "Criminal Justice Ontology" ;
+    rdfs:comment "An ontology for assessing the risk of recidivism of released prisoners." .
+
+# Knowledge Engineer (KE): Let's start by defining the core concepts. We need a class for Prisoner.
+
+:Prisoner a owl:Class ;
+    rdfs:label "Prisoner" ;
+    rdfs:comment "A person who has been incarcerated." .
+
+# Domain Expert (DE):  We should also consider different statuses for prisoners, like "remand" and "sentenced".
+
+:RemandPrisoner a owl:Class ;
+    rdfs:subClassOf :Prisoner ;
+    rdfs:label "Remand Prisoner" ;
+    rdfs:comment "A prisoner held in custody awaiting trial." .
+
+:SentencedPrisoner a owl:Class ;
+    rdfs:subClassOf :Prisoner ;
+    rdfs:label "Sentenced Prisoner" ;
+    rdfs:comment "A prisoner serving a sentence after conviction." .
+
+
+# Knowledge Worker (KW):  It's important to track the prisoner's release.  How about a class for "Release"?
+
+:Release a owl:Class ;
+    rdfs:label "Release" ;
+    rdfs:comment "An instance of a prisoner being released from prison." .
+
+# KE: Good point. We'll need a property to link Prisoner and Release.
+
+:hasRelease a owl:ObjectProperty ;
+    rdfs:domain :Prisoner ;
+    rdfs:range :Release ;
+    rdfs:label "has release" .
+
+# DE:  The data includes various release methods. We should include them.
+
+:ReleaseMethod a owl:Class ;
+    rdfs:label "Release Method" .
+
+:Parole a owl:Class ;
+    rdfs:subClassOf :ReleaseMethod ;
+    rdfs:label "Parole" .
+
+:CompletionOfSentence a owl:Class ;
+    rdfs:subClassOf :ReleaseMethod ;
+    rdfs:label "Completion of Sentence" .
+
+:Extradition a owl:Class ;
+    rdfs:subClassOf :ReleaseMethod ;
+    rdfs:label "Extradition" .
+
+:releaseMethod a owl:ObjectProperty ;
+    rdfs:domain :Release ;
+    rdfs:range :ReleaseMethod ;
+    rdfs:label "release method" .
+
+
+# KW: The provided data mentions demographics, criminal history, and prison work. These are crucial for recidivism assessment.
+
+# KE: Agreed. Let's add properties for these.
+
+:hasAgeGroup a owl:ObjectProperty ;
+    rdfs:domain :Prisoner ;
+    rdfs:range :AgeGroup ;
+    rdfs:label "has age group" .
+
+:AgeGroup a owl:Class ;
+    rdfs:label "Age Group" .
+
+# ... (Similarly define classes and properties for LevelOfEducation, MaritalStatus, Religion, Nationality, Occupation, Crime, etc.)
+
+:hasCrime a owl:ObjectProperty ;
+    rdfs:domain :Prisoner ;
+    rdfs:range :Crime ;
+    rdfs:label "has crime" .
+
+:Crime a owl:Class ;
+    rdfs:label "Crime" .
+
+:hasNumberOfReleases a owl:DatatypeProperty ;
+    rdfs:domain :Prisoner ;
+    rdfs:range xsd:integer ;
+    rdfs:label "number of releases" .
+
+:daysInCustody a owl:DatatypeProperty ;
+    rdfs:domain :Prisoner ;
+    rdfs:range xsd:integer ;
+    rdfs:label "days in custody" .
+
+:daysAfterRelease a owl:DatatypeProperty ;
+    rdfs:domain :Release ;
+    rdfs:range xsd:integer ;
+    rdfs:label "days after release" .
+
+:penaltyDurationInDays a owl:DatatypeProperty ;
+    rdfs:domain :Prisoner ;
+    rdfs:range xsd:integer ;
+    rdfs:label "penalty duration in days" .
+
+:workedInPrison a owl:DatatypeProperty ;
+    rdfs:domain :Prisoner ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "worked in prison" .
+
+# ... (Add more classes and properties based on the domain data and expertise, covering concepts like Court, Location, Penalty Type, etc.)
+
+# DE: Don't forget about recidivism itself.
+
+:Recidivism a owl:Class ;
+    rdfs:label "Recidivism" ;
+    rdfs:comment "The act of reoffending after being released from prison." .
+
+:hasRecidivismRisk a owl:DatatypeProperty ;
+    rdfs:domain :Prisoner ;
+    rdfs:range xsd:string ;  # Or a more specific datatype if we have a risk scoring system
+    rdfs:label "has recidivism risk" .
+
+
+# KE: This looks like a good starting point. We can refine and extend it further based on specific competency questions and as we gather more information.
+
+# KW: I agree.  This structure allows us to capture the essential data and begin analyzing it.  We can then identify gaps and add more detail as needed.

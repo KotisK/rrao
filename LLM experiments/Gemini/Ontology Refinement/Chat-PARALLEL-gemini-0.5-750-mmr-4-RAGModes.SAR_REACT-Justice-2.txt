@@ -1,0 +1,132 @@
+```turtle
+@prefix : <http://i-lab.aegean.gr/ontologies/rrao#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iccs: <http://i-lab.aegean.gr/ontologies/rrao/iccs#> .
+
+
+# Knowledge Engineer: Let's start by defining the core concepts related to recidivism risk assessment. We have 'Sentenced', which is a subclass of 'Person'. We need to model the different statuses a sentenced person can have.
+
+# Domain Expert:  Absolutely. We need to distinguish between those currently imprisoned, those released, and those on remand.  Also, crucial for risk assessment are details about the crime, the penalty, and how it was executed.  We also need to consider the legal context, including the court and its decisions.
+
+# Knowledge Worker: From a user perspective, it's vital to understand the likelihood of reoffending.  Information about the individual's background, such as education, marital status, and occupation, is also important for social reintegration programs.
+
+
+# Ontology Development (Iterative Process)
+
+:Imprisoned a owl:Class ;
+    rdfs:subClassOf :Sentenced ;
+    rdfs:label "Imprisoned Person"@en .
+
+:Released a owl:Class ;
+    rdfs:subClassOf :Sentenced ;
+    rdfs:label "Released Person"@en .
+
+:Remand a owl:Class ;  # New class for individuals on remand
+    rdfs:subClassOf :Sentenced ;
+    rdfs:label "Person on Remand"@en .
+
+
+# ... (Other existing classes and properties from the initial ontology) ...
+
+:hasCrimeCategory a owl:ObjectProperty ;
+    rdfs:domain :Crime ;
+    rdfs:range :CrimeCategory ; # New class for ICCS categories
+    rdfs:label "has crime category"@en .
+
+
+:CrimeCategory a owl:Class ;
+    rdfs:label "Crime Category"@en .
+
+iccs:0905 a :CrimeCategory ; # Example from the provided data
+    rdfs:label "Acts related to an organized criminal group"@en .
+
+iccs:0401 a :CrimeCategory ; # Example from the provided data
+    rdfs:label "Robbery"@en .
+
+iccs:02022 a :CrimeCategory ; # Example from the provided data
+    rdfs:label "Kidnapping"@en .
+
+iccs:0601 a :CrimeCategory ; # Example from the provided data
+    rdfs:label "Unlawful acts involving controlled drugs or precursors"@en .
+
+
+:ReleaseType a owl:Class ;  # New class for types of release
+    rdfs:label "Release Type"@en .
+
+:hasReleaseType a owl:ObjectProperty ;
+    rdfs:domain :Released ;
+    rdfs:range :ReleaseType ;
+    rdfs:label "has release type"@en .
+
+
+# Knowledge Engineer: We've added classes for Imprisoned, Released, and Remand status, and linked crimes to their ICCS categories.  How can we further refine the 'Release' concept?
+
+# Domain Expert:  Releases can happen in various ways: parole, completion of sentence, acquittal, etc.  Each way has different implications for recidivism risk.  We should also include information about any terms imposed upon release, like probation or restraining orders.
+
+# Knowledge Worker:  Knowing the specific release type is crucial for understanding the individual's current legal status and potential support needs.
+
+
+:Parole a :ReleaseType ;
+    rdfs:label "Parole"@en .
+
+:CompletionOfSentence a :ReleaseType ;
+    rdfs:label "Completion of Sentence"@en .
+
+:Acquittal a :ReleaseType ;
+    rdfs:label "Acquittal"@en .
+
+# ... (Other release types can be added as needed) ...
+
+:hasReleaseTerms a owl:ObjectProperty ;
+    rdfs:domain :Released ;
+    rdfs:range :ReleaseTerms ; # New class for release terms
+    rdfs:label "has release terms"@en .
+
+:ReleaseTerms a owl:Class ;
+    rdfs:label "Release Terms"@en .
+
+:Probation a :ReleaseTerms ;
+    rdfs:label "Probation"@en .
+
+:RestrainingOrder a :ReleaseTerms ;
+    rdfs:label "Restraining Order"@en .
+
+# ... (Other release terms can be added) ...
+
+
+# Knowledge Engineer: I've added classes for different release types and terms.  What other factors should we consider for a comprehensive risk assessment?
+
+# Domain Expert:  The offender's behavior in prison is a significant indicator.  We should include information about work in prison, disciplinary actions, and participation in rehabilitation programs.
+
+# Knowledge Worker:  Access to such information would be invaluable for supporting released individuals and tailoring interventions.
+
+
+:PrisonBehavior a owl:Class ;
+    rdfs:label "Prison Behavior"@en .
+
+:hasPrisonBehavior a owl:ObjectProperty ;
+    rdfs:domain :Imprisoned ;
+    rdfs:range :PrisonBehavior ;
+    rdfs:label "has prison behavior"@en .
+
+
+:WorkInPrison a :PrisonBehavior ; # Existing class, now linked to PrisonBehavior
+    rdfs:label "Work in Prison"@en .
+
+:DisciplinaryAction a :PrisonBehavior ; # New class
+    rdfs:label "Disciplinary Action"@en .
+
+:RehabilitationProgram a :PrisonBehavior ; # New class
+    rdfs:label "Rehabilitation Program"@en .
+
+
+# ... (Continue adding classes and properties iteratively until all requirements are met) ...
+
+
+```

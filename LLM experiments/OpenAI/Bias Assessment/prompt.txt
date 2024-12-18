@@ -1,0 +1,5 @@
+Act as a bias/fairness expert along with the role of an ontology engineer
+Data or schema models may be biased (unfair) due to specific sensitive properties (protected variables) such as as "profession" and "relegion"
+Assess bias in the given ontology, based on gender, sex, age, nationality, race, etc. 
+
+Mitigate the detected bias and return the given ontology unbiased.

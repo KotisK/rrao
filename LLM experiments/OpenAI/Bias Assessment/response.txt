@@ -1,0 +1,29 @@
+### Iterative Discussion
+
+#### Step 1: Identifying Bias
+1. **Initial Analysis**:
+   - The ontology contains data properties such as `:sex`, `:ageGroup`, `:nationality`, `:religion`, `:maritalStatus`, and `:reportedOccupation`.
+   - These properties can lead to biased conclusions if used improperly in the context of reoffending risk assessment.
+
+2. **Bias Identification**:
+   - **Sex**: Bias may occur if the ontology implies a higher or lower risk of reoffending based on sex.
+   - **Age Group**: Age-related bias can occur if younger or older individuals are unfairly assessed.
+   - **Nationality**: Nationality-based bias can lead to unfair treatment of individuals from certain countries.
+   - **Religion**: Religion-based bias can lead to discrimination based on religious beliefs.
+   - **Marital Status**: Bias based on marital status can lead to unfair assessments.
+   - **Reported Occupation**: Bias based on occupation can lead to unfair stereotyping.
+
+#### Step 2: Mitigating Bias
+1. **Removing or Generalizing Sensitive Data Properties**:
+   - Replace `:sex` with a more generalized property that does not infer risk based on sex.
+   - Replace `:nationality` with a property that does not infer risk based on country of origin.
+   - Replace `:religion` with a property that does not infer risk based on religious beliefs.
+   - Ensure `:ageGroup` is used in a way that does not unfairly target specific age groups.
+   - Ensure `:maritalStatus` is used in a way that does not unfairly target specific marital statuses.
+   - Ensure `:reportedOccupation` is used in a way that does not unfairly target specific occupations.
+
+#### Step 3: Extending the Ontology with Domain Data
+1. **Extracting New Classes and Properties**:
+   - From the domain data, new relevant classes and properties can be identified.
+   - Create new classes for `OccupationCategory`, `Crime`, `ICCSCategory`, `CourtDecision`, `Penalty`, `WayOfRelease`, and `CourtLocation`.
+   - Create new object properties to link these classes.

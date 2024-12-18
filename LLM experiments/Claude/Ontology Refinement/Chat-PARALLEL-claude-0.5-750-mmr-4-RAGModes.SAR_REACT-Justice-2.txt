@@ -1,0 +1,83 @@
+I'll play all three roles to collaboratively develop the ontology. Let's start the discussion:
+
+Knowledge Engineer: Looking at the domain data and requirements, we need to extend the ontology to better capture concepts related to recidivism risk assessment. I notice several important concepts missing, particularly around prison work programs and release conditions.
+
+Domain Expert: Yes, from my experience, work programs in prison and the conditions of release are crucial factors in recidivism risk assessment. We should also consider adding more detailed classifications for crimes based on the ICCS categories shown in the data.
+
+Knowledge Worker: As someone who would use this ontology, I'd find it valuable to have more granular information about the way of release and prison status. The data shows various release types like "conditional release" and "release under terms" that should be modeled.
+
+Knowledge Engineer: Good points. Let me add these concepts to the ontology. I'll start with prison work programs:
+
+```turtle
+# New Classes
+:PrisonWorkProgram rdf:type owl:Class ;
+    rdfs:subClassOf :workInPrison ;
+    rdfs:comment "Specific work program available in prison facilities"@en ;
+    rdfs:label "Prison Work Program"@en .
+
+:Cleaning rdf:type owl:Class ;
+    rdfs:subClassOf :PrisonWorkProgram ;
+    rdfs:label "Cleaning"@en .
+
+:VisitationProgram rdf:type owl:Class ;
+    rdfs:subClassOf :PrisonWorkProgram ;
+    rdfs:label "Visitation Program"@en .
+
+# New Object Properties
+:participatesIn rdf:type owl:ObjectProperty ;
+    rdfs:domain :imprisoned ;
+    rdfs:range :PrisonWorkProgram ;
+    rdfs:label "participates in"@en .
+```
+
+Domain Expert: We should also model the different types of release conditions more explicitly. From my experience, these are critical factors in assessing recidivism risk.
+
+Knowledge Engineer: Agreed. I'll add those concepts:
+
+```turtle
+:ReleaseType rdf:type owl:Class ;
+    rdfs:subClassOf :wayOfRelease ;
+    rdfs:label "Release Type"@en .
+
+:ConditionalRelease rdf:type owl:Class ;
+    rdfs:subClassOf :ReleaseType ;
+    rdfs:label "Conditional Release"@en .
+
+:ReleaseUnderTerms rdf:type owl:Class ;
+    rdfs:subClassOf :ReleaseType ;
+    rdfs:label "Release Under Terms"@en .
+
+:Acquittal rdf:type owl:Class ;
+    rdfs:subClassOf :ReleaseType ;
+    rdfs:label "Acquittal"@en .
+```
+
+Knowledge Worker: The data also shows various occupational categories that could be relevant for risk assessment. Should we model those?
+
+Domain Expert: Yes, occupation categories can be important indicators. Let's add those:
+
+Knowledge Engineer: I'll add the occupation-related concepts:
+
+```turtle
+:OccupationCategory rdf:type owl:Class ;
+    rdfs:label "Occupation Category"@en .
+
+:ElementaryOccupations rdf:type owl:Class ;
+    rdfs:subClassOf :OccupationCategory ;
+    rdfs:label "Elementary Occupations"@en .
+
+:CraftWorkers rdf:type owl:Class ;
+    rdfs:subClassOf :OccupationCategory ;
+    rdfs:label "Craft and Related Trades Workers"@en .
+
+:ClericalWorkers rdf:type owl:Class ;
+    rdfs:subClassOf :OccupationCategory ;
+    rdfs:label "Clerical Support Workers"@en .
+
+:hasOccupationCategory rdf:type owl:ObjectProperty ;
+    rdfs:domain :person ;
+    rdfs:range :OccupationCategory ;
+    rdfs:label "has occupation category"@en .
+```
+
+Would you like me to continue expanding the ontology with more concepts from the domain data?

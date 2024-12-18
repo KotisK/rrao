@@ -1,0 +1,151 @@
+@prefix : <http://example.org/criminal-justice#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Prisoner a owl:Class ;
+    rdfs:label "Prisoner" ;
+    rdfs:comment "A person who has been incarcerated." .
+
+:Crime a owl:Class ;
+    rdfs:label "Crime" ;
+    rdfs:comment "An illegal act committed by a prisoner." .
+
+:Penalty a owl:Class ;
+    rdfs:label "Penalty" ;
+    rdfs:comment "The punishment assigned to a prisoner for a crime." .
+
+:Release a owl:Class ;
+    rdfs:label "Release" ;
+    rdfs:comment "The method by which a prisoner is released from prison." .
+
+:RiskAssessment a owl:Class ;
+    rdfs:label "RiskAssessment" ;
+    rdfs:comment "An evaluation of the likelihood of a released prisoner reoffending." .
+
+:levelOfEducation a owl:DatatypeProperty ;
+    rdfs:domain :Prisoner ;
+    rdfs:range xsd:string ;
+    rdfs:label "level of education" ;
+    rdfs:comment "The educational level of the prisoner." .
+
+:maritalStatus a owl:DatatypeProperty ;
+    rdfs:domain :Prisoner ;
+    rdfs:range xsd:string ;
+    rdfs:label "marital status" ;
+    rdfs:comment "The marital status of the prisoner." .
+
+:religion a owl:DatatypeProperty ;
+    rdfs:domain :Prisoner ;
+    rdfs:range xsd:string ;
+    rdfs:label "religion" ;
+    rdfs:comment "The religion of the prisoner." .
+
+:nationality a owl:DatatypeProperty ;
+    rdfs:domain :Prisoner ;
+    rdfs:range xsd:string ;
+    rdfs:label "nationality" ;
+    rdfs:comment "The nationality of the prisoner." .
+
+:occupation a owl:DatatypeProperty ;
+    rdfs:domain :Prisoner ;
+    rdfs:range xsd:string ;
+    rdfs:label "occupation" ;
+    rdfs:comment "The occupation of the prisoner." .
+
+:sex a owl:DatatypeProperty ;
+    rdfs:domain :Prisoner ;
+    rdfs:range xsd:string ;
+    rdfs:label "sex" ;
+    rdfs:comment "The sex of the prisoner." .
+
+:occupationCategory a owl:DatatypeProperty ;
+    rdfs:domain :Prisoner ;
+    rdfs:range xsd:string ;
+    rdfs:label "occupation category" ;
+    rdfs:comment "The category of the prisoner's occupation." .
+
+:committedCrime a owl:ObjectProperty ;
+    rdfs:domain :Prisoner ;
+    rdfs:range :Crime ;
+    rdfs:label "committed crime" ;
+    rdfs:comment "The crime committed by the prisoner." .
+
+:receivedPenalty a owl:ObjectProperty ;
+    rdfs:domain :Prisoner ;
+    rdfs:range :Penalty ;
+    rdfs:label "received penalty" ;
+    rdfs:comment "The penalty received by the prisoner." .
+
+:wayOfRelease a owl:ObjectProperty ;
+    rdfs:domain :Prisoner ;
+    rdfs:range :Release ;
+    rdfs:label "way of release" ;
+    rdfs:comment "The method by which the prisoner was released." .
+
+:assessedRisk a owl:ObjectProperty ;
+    rdfs:domain :Prisoner ;
+    rdfs:range :RiskAssessment ;
+    rdfs:label "assessed risk" ;
+    rdfs:comment "The risk assessment of the prisoner." .
+
+:crimeCategory a owl:DatatypeProperty ;
+    rdfs:domain :Crime ;
+    rdfs:range xsd:string ;
+    rdfs:label "crime category" ;
+    rdfs:comment "The category of the crime." .
+
+:penaltyDuration a owl:DatatypeProperty ;
+    rdfs:domain :Penalty ;
+    rdfs:range xsd:integer ;
+    rdfs:label "penalty duration" ;
+    rdfs:comment "The duration of the penalty in days." .
+
+:releaseType a owl:DatatypeProperty ;
+    rdfs:domain :Release ;
+    rdfs:range xsd:string ;
+    rdfs:label "release type" ;
+    rdfs:comment "The type of release." .
+
+:daysInCustody a owl:DatatypeProperty ;
+    rdfs:domain :RiskAssessment ;
+    rdfs:range xsd:integer ;
+    rdfs:label "days in custody" ;
+    rdfs:comment "The number of days the prisoner was in custody." .
+
+:ageGroup a owl:DatatypeProperty ;
+    rdfs:domain :RiskAssessment ;
+    rdfs:range xsd:string ;
+    rdfs:label "age group" ;
+    rdfs:comment "The age group of the prisoner." .
+
+:daysAfterRelease a owl:DatatypeProperty ;
+    rdfs:domain :RiskAssessment ;
+    rdfs:range xsd:integer ;
+    rdfs:label "days after release" ;
+    rdfs:comment "The number of days since the prisoner was released." .
+
+:courtLocation a owl:DatatypeProperty ;
+    rdfs:domain :Penalty ;
+    rdfs:range xsd:string ;
+    rdfs:label "court location" ;
+    rdfs:comment "The location of the court that issued the penalty." .
+
+:courtDecision a owl:DatatypeProperty ;
+    rdfs:domain :Penalty ;
+    rdfs:range xsd:string ;
+    rdfs:label "court decision" ;
+    rdfs:comment "The decision made by the court." .
+
+:workInPrison a owl:DatatypeProperty ;
+    rdfs:domain :Prisoner ;
+    rdfs:range xsd:string ;
+    rdfs:label "work in prison" ;
+    rdfs:comment "The work done by the prisoner while in prison." .
+
+:prisonId a owl:DatatypeProperty ;
+    rdfs:domain :Prisoner ;
+    rdfs:range xsd:string ;
+    rdfs:label "prison ID" ;
+    rdfs:comment "The ID of the prison where the prisoner was held." .
