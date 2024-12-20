@@ -34,13 +34,13 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <vann:preferredNamespacePrefix xml:lang="en">rrao</vann:preferredNamespacePrefix>
         <rdfs:label xml:lang="en">Reoffending Risk Assessment Ontology</rdfs:label>
         <rdfs:seeAlso xml:lang="en"></rdfs:seeAlso>
-        <owl:versionInfo>v0.5</owl:versionInfo>
+        <owl:versionInfo>v1</owl:versionInfo>
         <ns:term_status xml:lang="en"></ns:term_status>
     </owl:Ontology>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -48,64 +48,64 @@ The ontology development is part of the FAIR – PReSONS research project.  http
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://purl.org/dc/elements/1.1/bibliographicCitation -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/bibliographicCitation"/>
-
+    
 
 
     <!-- http://purl.org/dc/elements/1.1/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
-
+    
 
 
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
-
+    
 
 
     <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-
+    
 
 
     <!-- http://purl.org/dc/elements/1.1/licence -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/licence"/>
-
+    
 
 
     <!-- http://purl.org/dc/elements/1.1/references -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/references"/>
-
+    
 
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
-
+    
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-
+    
 
 
     <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Datatypes
@@ -113,22 +113,22 @@ The ontology development is part of the FAIR – PReSONS research project.  http
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://www.w3.org/2001/XMLSchema#duration -->
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
-
+    
 
 
     <!-- http://www.w3.org/2001/XMLSchema#monetary -->
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#monetary"/>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -136,7 +136,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- https://w3id.org/rrao#decides -->
@@ -144,9 +144,9 @@ The ontology development is part of the FAIR – PReSONS research project.  http
     <owl:ObjectProperty rdf:about="https://w3id.org/rrao#decides">
         <rdfs:domain rdf:resource="https://w3id.org/rrao#court"/>
         <rdfs:range rdf:resource="https://w3id.org/rrao#courtDecision"/>
-        <rdfs:label>decides</rdfs:label>
+        <rdfs:label xml:lang="en">decides</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#defines -->
@@ -158,7 +158,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Represents a court defining or establishing a penalty for a case.</rdfs:comment>
         <rdfs:label xml:lang="en">defines</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#executedAs -->
@@ -170,7 +170,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Indicates the manner in which a penalty or punishment is carried out.</rdfs:comment>
         <rdfs:label xml:lang="en">executed as</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#hasGravity -->
@@ -182,7 +182,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Indicates the severity or seriousness of a crime.</rdfs:comment>
         <rdfs:label xml:lang="en">has gravity</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#hasLevelOfParticipation -->
@@ -194,7 +194,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Describes the level or degree of participation an offender had in a crime.</rdfs:comment>
         <rdfs:label xml:lang="en">has level of participation</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#hasLiability -->
@@ -206,31 +206,31 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Represents the level of legal responsibility or liability an offender holds.</rdfs:comment>
         <rdfs:label xml:lang="en">has liability</rdfs:label>
     </owl:ObjectProperty>
+    
 
 
+    <!-- https://w3id.org/rrao#hasRiskOfReoffending -->
 
-    <!-- https://w3id.org/rrao#hasLikelihoodOfReoffending -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#hasLikelihoodOfReoffending">
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#hasRiskOfReoffending">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/rrao#senetenced"/>
         <rdfs:range rdf:resource="https://w3id.org/rrao#riskOfReoffending"/>
         <rdfs:comment xml:lang="en">Represents the assessed risk that an offender will reoffend or engage in criminal behavior again.</rdfs:comment>
-        <rdfs:label xml:lang="en">has likelihood of recidivism</rdfs:label>
+        <rdfs:label xml:lang="en">has risk of reoffending</rdfs:label>
     </owl:ObjectProperty>
+    
 
 
+    <!-- https://w3id.org/rrao#hasStatus -->
 
-    <!-- https://w3id.org/rrao#hasPrisonStatus -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#hasPrisonStatus">
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#hasStatus">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/rrao#imprisoned"/>
         <rdfs:range rdf:resource="https://w3id.org/rrao#convictionStatus"/>
         <rdfs:comment xml:lang="en">Describes the current status of an offender in prison</rdfs:comment>
-        <rdfs:label xml:lang="en">has prison status</rdfs:label>
+        <rdfs:label xml:lang="en">has status</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#improsonedAt -->
@@ -242,7 +242,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Indicates the prison where an offender is currently held.</rdfs:comment>
         <rdfs:label xml:lang="en">imprisoned at</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#isRelatedToCrime -->
@@ -254,7 +254,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Indicates the association between a penalty and a crime related to the case.</rdfs:comment>
         <rdfs:label xml:lang="en">is related to crime</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#participatedIn -->
@@ -266,7 +266,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Indicates that the offender participated in a crime.</rdfs:comment>
         <rdfs:label xml:lang="en">participated in</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#sentencedTo -->
@@ -278,10 +278,10 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment>Indicates the penalty to which an offender has been sentenced.</rdfs:comment>
         <rdfs:label>sentenced to</rdfs:label>
     </owl:ObjectProperty>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -289,7 +289,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- https://w3id.org/rrao#ageGroup -->
@@ -301,7 +301,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">The age group that the person belongs to.</rdfs:comment>
         <rdfs:label xml:lang="en">age group</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#amountOfPecuniaryPenalty -->
@@ -313,7 +313,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Specifies the monetary amount of the pecuniary penalty.</rdfs:comment>
         <rdfs:label xml:lang="en">amount of pecuniary penalty</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#beneficialCalculation -->
@@ -325,7 +325,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Indicates whether beneficial calculation was applied to the penalty.</rdfs:comment>
         <rdfs:label xml:lang="en">beneficial calculation</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#birthYear -->
@@ -334,10 +334,10 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/rrao#person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:comment>Specifies the birth year of a person.</rdfs:comment>
-        <rdfs:label>birth year</rdfs:label>
+        <rdfs:comment xml:lang="en">Specifies the birth year of a person.</rdfs:comment>
+        <rdfs:label xml:lang="en">birth year</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#clildren -->
@@ -347,9 +347,9 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:domain rdf:resource="https://w3id.org/rrao#person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment>Indicates whether the person has children.</rdfs:comment>
-        <rdfs:label>children</rdfs:label>
+        <rdfs:label xml:lang="en">children</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#dateOfCrime -->
@@ -361,7 +361,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Represents the date on which the crime occurred.</rdfs:comment>
         <rdfs:label xml:lang="en">date of crime</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#dateOfEnteringPrison -->
@@ -373,7 +373,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Specifies the date when the individual entered prison.</rdfs:comment>
         <rdfs:label xml:lang="en">date of entering prison</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#dateOfExitingPrison -->
@@ -385,7 +385,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Indicates the date when the individual is expected to exit prison.</rdfs:comment>
         <rdfs:label xml:lang="en">date of exiting prison</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#daysInCustody -->
@@ -395,7 +395,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:label xml:lang="en">days in custody</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#daysSinceRelease -->
@@ -407,7 +407,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Indicates the days since the person has been released form prison</rdfs:comment>
         <rdfs:label xml:lang="en">days since release</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#decisionCode -->
@@ -419,7 +419,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Specifies the code or reference associated with a court decision.</rdfs:comment>
         <rdfs:label xml:lang="en">decision code</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#decisionDate -->
@@ -431,7 +431,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Indicates the date associated with a court decision.</rdfs:comment>
         <rdfs:label xml:lang="en">decision date</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#generalRegisterNumber -->
@@ -443,7 +443,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Represents the general register number associated with an imprisoned person.</rdfs:comment>
         <rdfs:label xml:lang="en">general register number</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#irrevocableConviction -->
@@ -455,7 +455,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Indicates whether the conviction is irrevocable.</rdfs:comment>
         <rdfs:label xml:lang="en">irrevocable conviction</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#isFromConcersion -->
@@ -467,7 +467,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Specifies whether the penalty is the result of a conversion from another penalty.</rdfs:comment>
         <rdfs:label xml:lang="en">is from conversion</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#isInitialSentence -->
@@ -479,7 +479,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:label xml:lang="en">is initial sentence</rdfs:label>
         <rdfs:seeAlso xml:lang="en">Indicates whether the penalty is an initial sentence.</rdfs:seeAlso>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#levelOfEducation -->
@@ -488,11 +488,11 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/rrao#person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment>The highest degree or level of schooling that an individual has completed.</rdfs:comment>
-        <rdfs:label>level of education</rdfs:label>
+        <rdfs:comment xml:lang="en">The highest degree or level of schooling that an individual has completed.</rdfs:comment>
+        <rdfs:label xml:lang="en">level of education</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://ilostat.ilo.org/methods/concepts-and-definitions/classification-education/"/>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#locatedIn -->
@@ -504,7 +504,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Denotes the physical location or address of a court.</rdfs:comment>
         <rdfs:label xml:lang="en">located in</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#maritalStatus -->
@@ -512,10 +512,10 @@ The ontology development is part of the FAIR – PReSONS research project.  http
     <owl:DatatypeProperty rdf:about="https://w3id.org/rrao#maritalStatus">
         <rdfs:domain rdf:resource="https://w3id.org/rrao#person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment>The legal relationship status of an individual, such as single, married, or divorced.</rdfs:comment>
-        <rdfs:label>marital status</rdfs:label>
+        <rdfs:comment xml:lang="en">The legal relationship status of an individual, such as single, married, or divorced.</rdfs:comment>
+        <rdfs:label xml:lang="en">marital status</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#nationality -->
@@ -524,10 +524,10 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/rrao#person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment>Represents the nationality or citizenship of a person.</rdfs:comment>
-        <rdfs:label>nationality</rdfs:label>
+        <rdfs:comment xml:lang="en">Represents the nationality or citizenship of a person.</rdfs:comment>
+        <rdfs:label xml:lang="en">nationality</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#numberOfReleasesFromPrison -->
@@ -539,7 +539,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Indicated the number of times a person has been released from prison</rdfs:comment>
         <rdfs:label xml:lang="en">number of releases from prison</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#penaltyDuration -->
@@ -551,7 +551,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Represents the duration for which the penalty is enforced.</rdfs:comment>
         <rdfs:label xml:lang="en">penalty duration</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#placeOfCrime -->
@@ -563,18 +563,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Represents the place on which the crime occurred.</rdfs:comment>
         <rdfs:label xml:lang="en">place of crime</rdfs:label>
     </owl:DatatypeProperty>
-
-
-
-    <!-- https://w3id.org/rrao#religion -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/rrao#religion">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/rrao#person"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>religion</rdfs:label>
-    </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#reoffendingRate -->
@@ -586,7 +575,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Indicated the number of times the offender has commited a crime after release</rdfs:comment>
         <rdfs:label xml:lang="en">reoffending rate</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#reportedOccupation -->
@@ -595,11 +584,11 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/rrao#person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment>The job or profession that an individual identifies as their primary occupation.</rdfs:comment>
-        <rdfs:label>reported occupation</rdfs:label>
+        <rdfs:comment xml:lang="en">The job or profession that an individual identifies as their primary occupation.</rdfs:comment>
+        <rdfs:label xml:lang="en">reported occupation</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://ilostat.ilo.org/methods/concepts-and-definitions/classification-occupation/"/>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#resultedInViolatingTerms -->
@@ -611,7 +600,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Indicates whether the imprisonment resulted in the violation of terms.</rdfs:comment>
         <rdfs:label xml:lang="en">resulted in violating terms</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#sex -->
@@ -620,10 +609,10 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/rrao#person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment>Indicates the biological sex of a person.Indicates the biological sex of a person.</rdfs:comment>
-        <rdfs:label>sex</rdfs:label>
+        <rdfs:comment xml:lang="en">Indicates the biological sex of a person.Indicates the biological sex of a person.</rdfs:comment>
+        <rdfs:label xml:lang="en">sex</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#takenInAbsentia -->
@@ -635,7 +624,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Indicates whether the court decision was made in the absence of the individual.</rdfs:comment>
         <rdfs:label xml:lang="en">taken in absentia</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#timesOccured -->
@@ -647,7 +636,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Represent the number of times a crime has occured</rdfs:comment>
         <rdfs:label xml:lang="en">times occured</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/rrao#workTime -->
@@ -659,10 +648,10 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Specifies the duration of time required for community service work.</rdfs:comment>
         <rdfs:label xml:lang="en">work time</rdfs:label>
     </owl:DatatypeProperty>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -670,25 +659,49 @@ The ontology development is part of the FAIR – PReSONS research project.  http
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
 
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0502 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0502"/>
+    
+
+
+    <!-- http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0601 -->
+
+    <owl:Class rdf:about="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0601"/>
+    
+
+
+    <!-- http://w3id.org/rrao/iccs#iccs_0502 -->
+
+    <owl:Class rdf:about="http://w3id.org/rrao/iccs#iccs_0502"/>
+    
+
+
+    <!-- http://w3id.org/rrao/iccs#iccs_06 -->
+
+    <owl:Class rdf:about="http://w3id.org/rrao/iccs#iccs_06"/>
+    
 
 
     <!-- http://www.w3.org/ns/odrl/2/Action -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Action"/>
-
+    
 
 
     <!-- http://www.w3.org/ns/odrl/2/Duty -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Duty"/>
-
+    
 
 
     <!-- http://www.w3.org/ns/odrl/2/Policy -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Policy"/>
-
+    
 
 
     <!-- https://w3id.org/rrao#accessory -->
@@ -698,7 +711,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">A person who contributes to the commission of a crime but is not present during the act.</rdfs:comment>
         <rdfs:label xml:lang="en">Accessory</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#accomplice -->
@@ -708,7 +721,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">A person who assists or aids another in committing a crime.</rdfs:comment>
         <rdfs:label xml:lang="en">Accomplice</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#communityServiceWork -->
@@ -718,7 +731,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">A penalty that requires the offender to perform unpaid work for the benefit of the community.</rdfs:comment>
         <rdfs:label xml:lang="en">Community Service Work</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#convictionStatus -->
@@ -736,7 +749,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">The legal status of an individual while they are convicted.</rdfs:comment>
         <rdfs:label xml:lang="en">Conviction Status</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#correctionaiInstitution -->
@@ -746,7 +759,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:label xml:lang="en">Correctional Institution</rdfs:label>
         <rdfs:seeAlso rdf:resource="euvoc:penalInstitution"/>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#court -->
@@ -757,7 +770,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:label xml:lang="en">Court</rdfs:label>
         <rdfs:seeAlso xml:lang="en">euvoc:courtOfLaw</rdfs:seeAlso>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#courtDecision -->
@@ -767,7 +780,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">A formal judgment or ruling made by a court of law.</rdfs:comment>
         <rdfs:label xml:lang="en">Court Decision</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#crime -->
@@ -779,7 +792,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:seeAlso rdf:resource="euvoc:offence"/>
         <rdfs:seeAlso rdf:resource="https://www.unodc.org/unodc/en/data-and-analysis/statistics/iccs.html"/>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#custodialPenalty -->
@@ -789,25 +802,25 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">A court-ordered punishment that requires the offender to be detained in a secure facility.</rdfs:comment>
         <rdfs:label xml:lang="en">Custodial penalty</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#custody -->
 
     <owl:Class rdf:about="https://w3id.org/rrao#custody">
         <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#executionOfPenalty"/>
-        <rdfs:label>Custody</rdfs:label>
+        <rdfs:label xml:lang="en">Custody</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#endOfSentence -->
 
     <owl:Class rdf:about="https://w3id.org/rrao#endOfSentence">
         <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#wayOfRelease"/>
-        <rdfs:label>End of Sentence</rdfs:label>
+        <rdfs:label xml:lang="en">End of Sentence</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#executionOfPenalty -->
@@ -816,7 +829,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">The enforcement or carrying out of a legally imposed punishment.</rdfs:comment>
         <rdfs:label xml:lang="en">Execution of penalty</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#felony -->
@@ -826,7 +839,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">A serious criminal offense that typically results in more severe punishments, such as long-term imprisonment.</rdfs:comment>
         <rdfs:label xml:lang="en">Felony</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#gravityOfCrime -->
@@ -835,7 +848,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">The seriousness or severity of a criminal act.</rdfs:comment>
         <rdfs:label xml:lang="en">Gravity of Crime</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#homeDetention -->
@@ -845,7 +858,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">A legal penalty where the offender is confined to their home rather than a prison.</rdfs:comment>
         <rdfs:label xml:lang="en">Home detention</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#imprisoned -->
@@ -854,7 +867,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#senetenced"/>
         <rdfs:label xml:lang="en">Imprisoned Person</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#imprisonment -->
@@ -864,7 +877,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">The act of confining an individual in a prison as punishment for a crime.</rdfs:comment>
         <rdfs:label xml:lang="en">Imprisonment</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#instigator -->
@@ -874,7 +887,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">A person who initiates or encourages others to commit a crime.</rdfs:comment>
         <rdfs:label xml:lang="en">Instigator</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#levelOfParticipation -->
@@ -884,7 +897,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:label xml:lang="en">Level of participation</rdfs:label>
         <rdfs:seeAlso rdf:resource="euvoc:complicity"/>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#liability -->
@@ -894,7 +907,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:label xml:lang="en">Liability</rdfs:label>
         <rdfs:seeAlso rdf:resource="euvoc:criminalLiability"/>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#lifeImprisonment -->
@@ -904,7 +917,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">A prison sentence that lasts for the remainder of the offender&apos;s life.</rdfs:comment>
         <rdfs:label xml:lang="en">Life Imprisonment</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#misdemeanour -->
@@ -914,7 +927,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">A less serious criminal offense, often punishable by fines or short-term imprisonment.</rdfs:comment>
         <rdfs:label xml:lang="en">Misdemeanour</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#nonCustodialPenalty -->
@@ -923,7 +936,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#penalty"/>
         <rdfs:label xml:lang="en">Non-custodial penalty</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#pecuniarySentence -->
@@ -933,7 +946,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">A financial penalty imposed as punishment for a crime</rdfs:comment>
         <rdfs:label xml:lang="en">Pecuniary Sentence</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#penalCourt -->
@@ -944,7 +957,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:label xml:lang="en">Penal court</rdfs:label>
         <rdfs:seeAlso xml:lang="en">euvoc:criminalCourt</rdfs:seeAlso>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#penalty -->
@@ -955,7 +968,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:label xml:lang="en">Penalty</rdfs:label>
         <rdfs:seeAlso rdf:resource="euvoc:penalty"/>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#person -->
@@ -965,7 +978,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:label xml:lang="en">Person</rdfs:label>
         <rdfs:seeAlso xml:lang="en">foaf:Person</rdfs:seeAlso>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#principalPerpetrator -->
@@ -975,7 +988,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">The main individual responsible for committing a criminal act.</rdfs:comment>
         <rdfs:label xml:lang="en">Principal perpetrator</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#prison -->
@@ -985,7 +998,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">A secure facility where individuals are confined as punishment for crimes.</rdfs:comment>
         <rdfs:label xml:lang="en">Prison</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#release -->
@@ -995,7 +1008,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">The act of freeing an individual from legal custody or imprisonment.</rdfs:comment>
         <rdfs:label xml:lang="en">Release</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#released -->
@@ -1004,7 +1017,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#senetenced"/>
         <rdfs:label xml:lang="en">Released</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#restraintOrders -->
@@ -1014,7 +1027,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">A legal order restricting an individual from certain activities or contact with others.</rdfs:comment>
         <rdfs:label xml:lang="en">Restraint orders</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#riskOfReoffending -->
@@ -1032,7 +1045,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">The likelihood that an individual will reoffend or commit another crime after release.</rdfs:comment>
         <rdfs:label xml:lang="en">Risk of reoffending</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#senetenced -->
@@ -1042,7 +1055,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">A person who has been convicted of a criminal offense.</rdfs:comment>
         <rdfs:label xml:lang="en">Sentenced</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#suspensionOfExecution -->
@@ -1052,7 +1065,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">A delay or postponement of the enforcement of a legal penalty.</rdfs:comment>
         <rdfs:label xml:lang="en">Suspension of execution (Parole)</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#termsImposedUponRelease -->
@@ -1062,7 +1075,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Specific conditions or restrictions placed on an individual upon their release from custody.</rdfs:comment>
         <rdfs:label xml:lang="en">Terms imposed upon release</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#wayOfRelease -->
@@ -1072,7 +1085,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">The manner or conditions under which an individual is released from legal custody.</rdfs:comment>
         <rdfs:label xml:lang="en">Way of release</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/rrao#workInPrison -->
@@ -1082,10 +1095,10 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rdfs:comment xml:lang="en">Employment or labor performed by prisoners while serving their sentence.</rdfs:comment>
         <rdfs:label xml:lang="en">Work in prison</rdfs:label>
     </owl:Class>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -1093,7 +1106,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- https://w3id.org/rrao#High -->
@@ -1101,7 +1114,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
     <owl:NamedIndividual rdf:about="https://w3id.org/rrao#High">
         <rdf:type rdf:resource="https://w3id.org/rrao#riskOfReoffending"/>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/rrao#Low -->
@@ -1109,7 +1122,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
     <owl:NamedIndividual rdf:about="https://w3id.org/rrao#Low">
         <rdf:type rdf:resource="https://w3id.org/rrao#riskOfReoffending"/>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/rrao#Medium -->
@@ -1117,27 +1130,27 @@ The ontology development is part of the FAIR – PReSONS research project.  http
     <owl:NamedIndividual rdf:about="https://w3id.org/rrao#Medium">
         <rdf:type rdf:resource="https://w3id.org/rrao#riskOfReoffending"/>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/rrao#court_01 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/rrao#court_01">
         <rdf:type rdf:resource="https://w3id.org/rrao#penalCourt"/>
-        <rrao:locatedIn>Athens</rrao:locatedIn>
-        <rdfs:label>ΣΤ΄ Τριμελές Εφετείο Κακουργημάτων Αθήνας</rdfs:label>
+        <rrao:locatedIn xml:lang="en">Athens</rrao:locatedIn>
+        <rdfs:label xml:lang="el">ΣΤ΄ Τριμελές Εφετείο Κακουργημάτων Αθήνας</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/rrao#court_2 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/rrao#court_2">
         <rdf:type rdf:resource="https://w3id.org/rrao#penalCourt"/>
-        <rrao:locatedIn xml:lang="gr">Θεσσαλονίκη</rrao:locatedIn>
-        <rdfs:label>Γ&apos; Μονομελές Πλημ/κείο Θεσ/νίκης</rdfs:label>
+        <rrao:locatedIn xml:lang="el">Θεσσαλονίκη</rrao:locatedIn>
+        <rdfs:label xml:lang="el">Γ&apos; Μονομελές Πλημ/κείο Θεσ/νίκης</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/rrao#court_decision_01 -->
@@ -1145,7 +1158,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
     <owl:NamedIndividual rdf:about="https://w3id.org/rrao#court_decision_01">
         <rdf:type rdf:resource="https://w3id.org/rrao#courtDecision"/>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/rrao#court_decision_02 -->
@@ -1153,27 +1166,27 @@ The ontology development is part of the FAIR – PReSONS research project.  http
     <owl:NamedIndividual rdf:about="https://w3id.org/rrao#court_decision_02">
         <rdf:type rdf:resource="https://w3id.org/rrao#courtDecision"/>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/rrao#crime_01 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/rrao#crime_01">
-        <rdf:type rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0601"/>
+        <rdf:type rdf:resource="http://w3id.org/rrao/iccs#iccs_06"/>
         <rdf:type rdf:resource="https://w3id.org/rrao#crime"/>
-        <rdfs:label>ΝΑΡΚΩΤΙΚΑ</rdfs:label>
+        <rdfs:label xml:lang="el">ΝΑΡΚΩΤΙΚΑ</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/rrao#crime_02 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/rrao#crime_02">
-        <rdf:type rdf:resource="http://i-lab.aegean.gr/ontologies/rrao/iccs#iccs_0502"/>
+        <rdf:type rdf:resource="http://w3id.org/rrao/iccs#iccs_0502"/>
         <rdf:type rdf:resource="https://w3id.org/rrao#crime"/>
-        <rdfs:label>ΚΛΟΠΗ</rdfs:label>
+        <rdfs:label xml:lang="el">ΚΛΟΠΗ</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/rrao#debtor -->
@@ -1181,14 +1194,14 @@ The ontology development is part of the FAIR – PReSONS research project.  http
     <owl:NamedIndividual rdf:about="https://w3id.org/rrao#debtor">
         <rdf:type rdf:resource="https://w3id.org/rrao#convictionStatus"/>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/rrao#imprisoned_01 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/rrao#imprisoned_01">
         <rdf:type rdf:resource="https://w3id.org/rrao#imprisoned"/>
-        <rrao:hasPrisonStatus rdf:resource="https://w3id.org/rrao#sentenced"/>
+        <rrao:hasStatus rdf:resource="https://w3id.org/rrao#sentenced"/>
         <rrao:improsonedAt rdf:resource="https://w3id.org/rrao#prison_01"/>
         <rrao:sentencedTo rdf:resource="https://w3id.org/rrao#penalty_01"/>
         <rrao:ageGroup>25&lt;age&lt;35</rrao:ageGroup>
@@ -1197,32 +1210,30 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rrao:maritalStatus>Άγαμος(η)</rrao:maritalStatus>
         <rrao:nationality>nationality49</rrao:nationality>
         <rrao:numberOfReleasesFromPrison rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rrao:numberOfReleasesFromPrison>
-        <rrao:religion>religion21</rrao:religion>
         <rrao:reportedOccupation>Ιδιωτικός υπάλληλος</rrao:reportedOccupation>
         <rrao:sex>Male</rrao:sex>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/rrao#imprisoned_02 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/rrao#imprisoned_02">
         <rdf:type rdf:resource="https://w3id.org/rrao#released"/>
-        <rrao:hasPrisonStatus rdf:resource="https://w3id.org/rrao#sentenced"/>
+        <rrao:hasStatus rdf:resource="https://w3id.org/rrao#sentenced"/>
         <rrao:improsonedAt rdf:resource="https://w3id.org/rrao#prison_2"/>
         <rrao:sentencedTo rdf:resource="https://w3id.org/rrao#penalty_02"/>
         <rrao:ageGroup xml:lang="en">age&lt;=25</rrao:ageGroup>
-        <rrao:daysInCustody xml:lang="gr">217</rrao:daysInCustody>
-        <rrao:daysSinceRelease xml:lang="gr">1232</rrao:daysSinceRelease>
+        <rrao:daysInCustody rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">217</rrao:daysInCustody>
+        <rrao:daysSinceRelease rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1232</rrao:daysSinceRelease>
         <rrao:levelOfEducation xml:lang="en">basic</rrao:levelOfEducation>
-        <rrao:maritalStatus xml:lang="gr">Άγαμος(η)</rrao:maritalStatus>
-        <rrao:nationality xml:lang="gr">nationality90</rrao:nationality>
-        <rrao:numberOfReleasesFromPrison xml:lang="gr">2</rrao:numberOfReleasesFromPrison>
-        <rrao:religion xml:lang="en">religion2</rrao:religion>
-        <rrao:reportedOccupation xml:lang="gr">Ελαιοχρωματιστής, βαφέας, και ασκών συναφές επάγγελμα</rrao:reportedOccupation>
+        <rrao:maritalStatus xml:lang="el">Άγαμος(η)</rrao:maritalStatus>
+        <rrao:nationality>nationality90</rrao:nationality>
+        <rrao:numberOfReleasesFromPrison rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rrao:numberOfReleasesFromPrison>
+        <rrao:reportedOccupation xml:lang="el">Ελαιοχρωματιστής, βαφέας, και ασκών συναφές επάγγελμα</rrao:reportedOccupation>
         <rrao:sex xml:lang="en">Male</rrao:sex>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/rrao#penalty_01 -->
@@ -1232,10 +1243,10 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rrao:executedAs rdf:resource="https://w3id.org/rrao#penalty_execution_02"/>
         <rrao:executedAs rdf:resource="https://w3id.org/rrao#pentalty_executions_01"/>
         <rrao:isRelatedToCrime rdf:resource="https://w3id.org/rrao#crime_01"/>
-        <rrao:penaltyDuration xml:lang="en">2190</rrao:penaltyDuration>
-        <rdfs:label>Κάθειρξη</rdfs:label>
+        <rrao:penaltyDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2190</rrao:penaltyDuration>
+        <rdfs:label xml:lang="el">Κάθειρξη</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/rrao#penalty_02 -->
@@ -1245,64 +1256,64 @@ The ontology development is part of the FAIR – PReSONS research project.  http
         <rrao:executedAs rdf:resource="https://w3id.org/rrao#penalty_execution_03"/>
         <rrao:executedAs rdf:resource="https://w3id.org/rrao#penalty_execution_04"/>
         <rrao:isRelatedToCrime rdf:resource="https://w3id.org/rrao#crime_02"/>
-        <rrao:penaltyDuration xml:lang="gr">240</rrao:penaltyDuration>
-        <rdfs:label>Φυλάκιση</rdfs:label>
+        <rrao:penaltyDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">240</rrao:penaltyDuration>
+        <rdfs:label xml:lang="el">Φυλάκιση</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/rrao#penalty_execution_02 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/rrao#penalty_execution_02">
         <rdf:type rdf:resource="https://w3id.org/rrao#workInPrison"/>
-        <rdfs:label>Επισκεπτήρια</rdfs:label>
+        <rdfs:label xml:lang="el">Επισκεπτήρια</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/rrao#penalty_execution_03 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/rrao#penalty_execution_03">
-        <rdf:type rdf:resource="https://w3id.org/rrao#wayOfRelease"/>
-        <rdfs:label>ΛΗΞΗ ΠΟΙΝΗΣ</rdfs:label>
+        <rdf:type rdf:resource="https://w3id.org/rrao#endOfSentence"/>
+        <rdfs:label xml:lang="el">ΛΗΞΗ ΠΟΙΝΗΣ</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/rrao#penalty_execution_04 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/rrao#penalty_execution_04">
         <rdf:type rdf:resource="https://w3id.org/rrao#workInPrison"/>
-        <rdfs:label>Καθαριστής</rdfs:label>
+        <rdfs:label xml:lang="el">Καθαριστής</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/rrao#pentalty_executions_01 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/rrao#pentalty_executions_01">
         <rdf:type rdf:resource="https://w3id.org/rrao#termsImposedUponRelease"/>
-        <rdfs:label>Υφ&apos; όρον απόλυση - Ν.4489/2017, αρθ.43, παρ.2 (2/5)</rdfs:label>
+        <rdfs:label xml:lang="el">Υφ&apos; όρον απόλυση - Ν.4489/2017, αρθ.43, παρ.2 (2/5)</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/rrao#prison_01 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/rrao#prison_01">
         <rdf:type rdf:resource="https://w3id.org/rrao#prison"/>
-        <rdfs:label>ΑΓΡΟΤΙΚΟ ΣΩΦΡΟΝΙΣΤΙΚΟ ΚΑΤΑΣΤΗΜΑ ΑΓΙΑΣ ΧΑΝΙΩΝ</rdfs:label>
+        <rdfs:label xml:lang="el">ΑΓΡΟΤΙΚΟ ΣΩΦΡΟΝΙΣΤΙΚΟ ΚΑΤΑΣΤΗΜΑ ΑΓΙΑΣ ΧΑΝΙΩΝ</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/rrao#prison_2 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/rrao#prison_2">
         <rdf:type rdf:resource="https://w3id.org/rrao#prison"/>
-        <rdfs:label>ΣΩΦΡΟΝΙΣΤΙΚΟ ΚΑΤΑΣΤΗΜΑ ΝΙΓΡΙΤΑΣ ΣΕΡΡΩΝ</rdfs:label>
+        <rdfs:label xml:lang="el">ΣΩΦΡΟΝΙΣΤΙΚΟ ΚΑΤΑΣΤΗΜΑ ΝΙΓΡΙΤΑΣ ΣΕΡΡΩΝ</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/rrao#remand -->
@@ -1310,7 +1321,7 @@ The ontology development is part of the FAIR – PReSONS research project.  http
     <owl:NamedIndividual rdf:about="https://w3id.org/rrao#remand">
         <rdf:type rdf:resource="https://w3id.org/rrao#convictionStatus"/>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/rrao#sentenced -->
