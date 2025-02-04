@@ -1,0 +1,931 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/rrao#"
+     xml:base="https://w3id.org/rrao"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://w3id.org/rrao"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/rrao#defines -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#defines">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rrao#court"/>
+        <rdfs:range rdf:resource="https://w3id.org/rrao#penalty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#executedAs -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#executedAs">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rrao#penalty"/>
+        <rdfs:range rdf:resource="https://w3id.org/rrao#executionOfPenalty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#hasCriminogenicNeeds -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#hasCriminogenicNeeds">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rrao#person"/>
+        <rdfs:range rdf:resource="https://w3id.org/rrao#criminogenicNeeds"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#hasGender -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#hasGender">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rrao#person"/>
+        <rdfs:range rdf:resource="https://w3id.org/rrao#gender"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#hasGravity -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#hasGravity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rrao#crime"/>
+        <rdfs:range rdf:resource="https://w3id.org/rrao#gravityOfCrime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#hasLevelOfEducation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#hasLevelOfEducation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rrao#person"/>
+        <rdfs:range rdf:resource="https://w3id.org/rrao#levelOfEducation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#hasLevelOfParticipation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#hasLevelOfParticipation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rrao#offender"/>
+        <rdfs:range rdf:resource="https://w3id.org/rrao#levelOfParticipation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#hasLevelOfSecurityRisk -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#hasLevelOfSecurityRisk">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rrao#offender"/>
+        <rdfs:range rdf:resource="https://w3id.org/rrao#securityRisk"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#hasLiability -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#hasLiability">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rrao#offender"/>
+        <rdfs:range rdf:resource="https://w3id.org/rrao#liability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#hasLikelihoodOfRecidivism -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#hasLikelihoodOfRecidivism">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rrao#offender"/>
+        <rdfs:range rdf:resource="https://w3id.org/rrao#recidivismRisk"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#hasMaritalStatus -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#hasMaritalStatus">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rrao#person"/>
+        <rdfs:range rdf:resource="https://w3id.org/rrao#maritalStatus"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#hasNationality -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#hasNationality">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rrao#person"/>
+        <rdfs:range rdf:resource="https://w3id.org/rrao#nationality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#hasNonCriminogenicNeeds -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#hasNonCriminogenicNeeds">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rrao#person"/>
+        <rdfs:range rdf:resource="https://w3id.org/rrao#non-criminogenicNeeds"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#hasOccupation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#hasOccupation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rrao#person"/>
+        <rdfs:range rdf:resource="https://w3id.org/rrao#reportedOccupation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#hasPlaceOfOccurance -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#hasPlaceOfOccurance">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rrao#crime"/>
+        <rdfs:range rdf:resource="https://w3id.org/rrao#placeOfOccurcnce"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#hasPrisonStatus -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#hasPrisonStatus">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#hasProfessionalStatus -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#hasProfessionalStatus">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rrao#person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#hasSecutityNeeds -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#hasSecutityNeeds">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rrao#offender"/>
+        <rdfs:range rdf:resource="https://w3id.org/rrao#securityNeeds"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#has_Sex -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#has_Sex">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rrao#person"/>
+        <rdfs:range rdf:resource="https://w3id.org/rrao#sex"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#improsonedAt -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#improsonedAt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rrao#offender"/>
+        <rdfs:range rdf:resource="https://w3id.org/rrao#prison"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#isLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#isLocatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rrao#court"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#needsMedicalTreament -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#needsMedicalTreament">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rrao#person"/>
+        <rdfs:range rdf:resource="https://w3id.org/rrao#medicalTreatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#orders -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#orders">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rrao#court"/>
+        <rdfs:range rdf:resource="https://w3id.org/rrao#executionOfPenalty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#participatedIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#participatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rrao#offender"/>
+        <rdfs:range rdf:resource="https://w3id.org/rrao#crime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#sentenced -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rrao#sentenced">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rrao#offender"/>
+        <rdfs:range rdf:resource="https://w3id.org/rrao#penalty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/rrao#amountOfPecuniaryPenalty -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rrao#amountOfPecuniaryPenalty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#beneficialCalculation -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rrao#beneficialCalculation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#birthYear -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rrao#birthYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#code -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rrao#code">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#date -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rrao#date">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#dateOfEnteringPrison -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rrao#dateOfEnteringPrison">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#dateOfExitingPrison -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rrao#dateOfExitingPrison">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#dateOfOccurance -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rrao#dateOfOccurance">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#generalRegisterNumber -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rrao#generalRegisterNumber">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#hasClildren -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rrao#hasClildren">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#irrevocableConviction -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rrao#irrevocableConviction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#isFromConcersion -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rrao#isFromConcersion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#isInitialSentence -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rrao#isInitialSentence">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#penaltyDuration -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rrao#penaltyDuration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#resultedInViolatingTerms -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rrao#resultedInViolatingTerms">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#takenInAbsentia -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rrao#takenInAbsentia">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#timeOfRelease -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rrao#timeOfRelease">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rrao#workTime -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rrao#workTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/rrao#Special -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#Special">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#securityRisk"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#accessory -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#accessory">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#levelOfParticipation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#accomplice -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#accomplice">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#levelOfParticipation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#administrativeCourt -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#administrativeCourt">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#court"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#civilCourt -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#civilCourt">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#court"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#communityServiceWork -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#communityServiceWork">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#penalty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#court -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#court"/>
+    
+
+
+    <!-- https://w3id.org/rrao#courtDecision -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#courtDecision"/>
+    
+
+
+    <!-- https://w3id.org/rrao#crime -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#crime"/>
+    
+
+
+    <!-- https://w3id.org/rrao#crimeAgainstIndividuals -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#crimeAgainstIndividuals">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#crime"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#crimeAgainstProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#crimeAgainstProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#crime"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#criminalAffiliation -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#criminalAffiliation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#securityNeeds"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#criminogenicNeeds -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#criminogenicNeeds"/>
+    
+
+
+    <!-- https://w3id.org/rrao#custodialSentence -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#custodialSentence">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#penalty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#demographicInfo -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#demographicInfo"/>
+    
+
+
+    <!-- https://w3id.org/rrao#domesticViolence -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#domesticViolence">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#crime"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#drugRelatedCrime -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#drugRelatedCrime">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#crime"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#executionOfPenalty -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#executionOfPenalty"/>
+    
+
+
+    <!-- https://w3id.org/rrao#extremistIdeology -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#extremistIdeology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#securityNeeds"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#felony -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#felony">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#gravityOfCrime"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#financialCrime -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#financialCrime">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#crime"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#gender -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#gender">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#demographicInfo"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#gravityOfCrime -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#gravityOfCrime"/>
+    
+
+
+    <!-- https://w3id.org/rrao#high -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#high">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#recidivismRisk"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#securityRisk"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#homeDetention -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#homeDetention">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#executionOfPenalty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#imprisonment -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#imprisonment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#penalty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#instigator -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#instigator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#levelOfParticipation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#levelOfEducation -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#levelOfEducation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#demographicInfo"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#levelOfParticipation -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#levelOfParticipation"/>
+    
+
+
+    <!-- https://w3id.org/rrao#liability -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#liability"/>
+    
+
+
+    <!-- https://w3id.org/rrao#lifeImprisonment -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#lifeImprisonment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#penalty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#low -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#low">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#recidivismRisk"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#securityRisk"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#maliciousIntent -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#maliciousIntent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#liability"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#maritalStatus -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#maritalStatus">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#demographicInfo"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#medicalTreatment -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#medicalTreatment"/>
+    
+
+
+    <!-- https://w3id.org/rrao#medium -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#medium">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#recidivismRisk"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#securityRisk"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#misdemeanour -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#misdemeanour">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#gravityOfCrime"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#nationality -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#nationality">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#demographicInfo"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#negligence -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#negligence">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#liability"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#non-criminogenicNeeds -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#non-criminogenicNeeds"/>
+    
+
+
+    <!-- https://w3id.org/rrao#occurrence -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#occurrence"/>
+    
+
+
+    <!-- https://w3id.org/rrao#offender -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#offender">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#organisedCrime -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#organisedCrime">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#crime"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#pecuniarySentence -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#pecuniarySentence">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#penalty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#penalCourt -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#penalCourt">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#court"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#penalty -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#penalty"/>
+    
+
+
+    <!-- https://w3id.org/rrao#person -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#person"/>
+    
+
+
+    <!-- https://w3id.org/rrao#placeOfOccurcnce -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#placeOfOccurcnce">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#occurrence"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#principalPerpetrator -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#principalPerpetrator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#levelOfParticipation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#prison -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#prison"/>
+    
+
+
+    <!-- https://w3id.org/rrao#psychiatricTreatment -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#psychiatricTreatment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#medicalTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#recidivismRisk -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#recidivismRisk"/>
+    
+
+
+    <!-- https://w3id.org/rrao#release -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#release">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#executionOfPenalty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#remand -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#remand">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#statusInPrison"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#reportedOccupation -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#reportedOccupation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#demographicInfo"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#restraintOrders -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#restraintOrders">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#executionOfPenalty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#securityNeeds -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#securityNeeds"/>
+    
+
+
+    <!-- https://w3id.org/rrao#securityRisk -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#securityRisk"/>
+    
+
+
+    <!-- https://w3id.org/rrao#sentenced -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#sentenced">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#statusInPrison"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#sex -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#sex">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#demographicInfo"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#sexualOffence -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#sexualOffence">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#crime"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#statusInPrison -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#statusInPrison"/>
+    
+
+
+    <!-- https://w3id.org/rrao#suspensionOfExecution -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#suspensionOfExecution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#executionOfPenalty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#termsImposedUponRelease -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#termsImposedUponRelease">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#executionOfPenalty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#wayOfRelease -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#wayOfRelease">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#executionOfPenalty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rrao#workInPrison -->
+
+    <owl:Class rdf:about="https://w3id.org/rrao#workInPrison">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rrao#executionOfPenalty"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
