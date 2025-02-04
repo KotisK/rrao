@@ -1,0 +1,18 @@
+#How do reoffending rates vary based on the age at which the first offense occurred?
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rrao: <http://w3id.org/rrao#>
+
+SELECT ?startingAgeGroup (AVG(?number_of_releases) AS ?avg_releases)
+WHERE {
+    {
+        SELECT ?person (MIN(?age_group) AS ?startingAgeGroup)
+        WHERE {
+            ?person rrao:ageGroup ?age_group
+        }
+        GROUP BY ?person
+    }
+    ?person rrao:numberOfReleasesFromPrison ?number_of_releases.
+}
+GROUP BY ?startingAgeGroup

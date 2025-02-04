@@ -1,0 +1,21 @@
+# Which sentences or crimes have the highest rates of reentering prison?
+
+PREFIX rrao: <http://w3id.org/rrao#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT (AVG(?number_of_releases) AS ?avg_releases) ?crime_category_label
+WHERE {
+    ?person rrao:numberOfReleasesFromPrison ?number_of_releases.
+    ?person rrao:sentencedTo ?penalty.
+    ?court_decision rrao:defined ?penalty.
+    ?court_decision rdfs:label ?sentence.
+    ?penalty rrao:executedAs ?penaltyDuration.
+    ?penaltyDuration rrao:daysInCustody ?days_in_custody.
+    ?penalty rrao:isRelatedToCrime ?crime.
+    ?crime rdfs:label ?crime_label.
+    ?crime a ?crime_category.
+    ?crime_category rdfs:label ?crime_category_label
+}
+GROUP BY ?crime_category_label
+ORDER BY DESC(?avg_releases)

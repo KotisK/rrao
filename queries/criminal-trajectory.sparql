@@ -1,0 +1,24 @@
+# What are the typical criminal trajectories for individuals who are imprisoned multiple times?
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rrao: <http://w3id.org/rrao#>
+
+SELECT  ?id (GROUP_CONCAT(?crime_label; separator=" - ") AS ?criminal_trajectory) (GROUP_CONCAT(?crime_category_label; separator=" - ") AS ?criminal_trajectory_types)
+WHERE {
+    ?person rrao:numberOfReleasesFromPrison ?number_of_releases.
+    ?person rrao:generalRegisterNumber ?id.
+    ?person rrao:sentencedTo ?penalty.
+    ?court_decision rrao:defined ?penalty.
+    ?penalty rrao:isRelatedToCrime ?crime.
+    ?crime a ?crime_category.
+    ?crime rdfs:label ?crime_label.
+    ?crime_category rdfs:label ?crime_category_label
+    optional{
+        ?crime rrao:dateOfCrime ?date_of_crime.
+    }
+
+    filter(?number_of_releases > 1)
+}
+GROUP BY ?id
+ORDER BY ?date_of_crime

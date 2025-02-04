@@ -1,0 +1,20 @@
+# What types of crimes are most commonly committed by individuals who reenter prison?
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rrao: <http://w3id.org/rrao#>
+
+SELECT DISTINCT (COUNT(?crime_category_label) AS ?crime_count) ?crime_category_label
+WHERE {
+    ?person rrao:numberOfReleasesFromPrison ?number_of_releases.
+    ?person rrao:sentencedTo ?penalty.
+    ?court_decision rrao:defined ?penalty.
+    ?penalty rrao:isRelatedToCrime ?crime.
+    ?crime rdfs:label ?crime_label.
+    ?crime a ?crime_category.
+    ?crime_category rdfs:label ?crime_category_label
+
+    filter(?number_of_releases > 1)
+}
+GROUP BY ?crime_category_label
+ORDER BY DESC(?crime_count)

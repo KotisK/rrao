@@ -1,0 +1,34 @@
+# What socio-economic factors are most correlated with reentering a prison?
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rrao: <http://w3id.org/rrao#>
+
+SELECT ?demographic_group ?group_value
+(COUNT(?person) AS ?persons_in_group)
+(AVG(?number_of_releases) AS ?avg_releases)
+WHERE {
+    ?person rrao:numberOfReleasesFromPrison ?number_of_releases.
+    filter(?number_of_releases > 1)
+    {
+        ?person rrao:levelOfEducation ?group_value .
+        BIND("Education Level" AS ?demographic_group)
+    }
+    UNION
+    {
+        ?person rrao:reportedOccupationCategory ?group_value .
+        BIND("Prior Occupation" AS ?demographic_group)
+    }
+    UNION
+    {
+        ?person rrao:maritalStatus ?group_value .
+        BIND("Marital Status" AS ?demographic_group)
+    }
+    UNION
+    {
+        ?person rrao:nationality ?group_value .
+        BIND("Nationality" AS ?demographic_group)
+    }
+}
+GROUP BY ?demographic_group ?group_value
+ORDER BY DESC(?persons_in_group)

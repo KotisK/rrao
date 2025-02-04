@@ -1,0 +1,10 @@
+# How do rates of reentering prison vary across demographic groups?
+
+PREFIX rrao: <http://w3id.org/rrao#>
+SELECT DISTINCT (AVG(?number_of_releases) AS ?avg_releases) ?age_group
+WHERE {
+    ?person rrao:numberOfReleasesFromPrison ?number_of_releases.
+    ?person rrao:ageGroup ?age_group.
+}
+GROUP BY ?age_group
+ORDER BY DESC(?avg_releases)

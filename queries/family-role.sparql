@@ -1,0 +1,11 @@
+#What role does family play in reducing the likelihood of reentering a prison?
+
+PREFIX rrao: <http://w3id.org/rrao#>
+SELECT DISTINCT (AVG(?number_of_releases) AS ?avg_releases) ?maritalStatus
+WHERE {
+    ?person rrao:numberOfReleasesFromPrison ?number_of_releases.
+    ?person rrao:maritalStatus ?maritalStatus
+}
+GROUP BY ?maritalStatus
+ORDER BY DESC(?avg_releases)
+

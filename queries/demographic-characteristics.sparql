@@ -1,0 +1,15 @@
+# What are the demographic and socio-economic characteristics of an imprisoned person?
+
+PREFIX rrao: <http://w3id.org/rrao#>
+SELECT DISTINCT ?age ?sex ?nationality ?educationLevel ?reportedOccupation ?occupationCategory ?maritalStatus
+WHERE {
+    ?person a rrao:imprisoned .
+    ?person rrao:generalRegisterNumber "7" ;
+    rrao:ageGroup ?age ;
+    rrao:sex ?sex ;
+    rrao:nationality ?nationality ;
+    rrao:levelOfEducation ?educationLevel ;
+    rrao:reportedOccupation ?reportedOccupation ;
+    rrao:reportedOccupationCategory ?occupationCategory;
+    rrao:maritalStatus ?maritalStatus .
+}
