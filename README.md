@@ -43,9 +43,13 @@ WHERE {
 }
 ```
 
-SPARQL examples can be found in the **queries/** directory.
+SPARQL examples can be found in the [queries](queries)directory.
 
 ---
+
+## **Ontology Versions**
+Latest version: [v1.0](rrao_v1.owl)
+Previous versions can be found in the [versions](versions) directory.
 
 ## **License**
 This ontology is released under the **Creative Commons 0  (CC0)** license.
